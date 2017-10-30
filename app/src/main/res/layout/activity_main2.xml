@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.p1.kraina1.MainActivity"
+    android:background="@drawable/image11"
+    tools:layout_editor_absoluteY="0dp"
+
+    tools:layout_editor_absoluteX="0dp">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="122dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/editText7"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="93dp"
+        android:allowUndo="false"
+        android:autoText="false"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Wynik M:C"
+        android:textAlignment="center"
+                    android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="103dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab1"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggleButton2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana12"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggleButton8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat8"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggleButton7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat7"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat4"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle2Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat28"
+                android:text="toggle2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggleButton9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmiana19"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab2"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggleButton6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana16"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana22"
+                android:id="@+id/toggle2Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana29"
+                android:id="@+id/toggle2Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:text="toggle2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab7"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab8"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana26"
+                android:id="@+id/toggle2Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggle3Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana32"
+                android:text="toggle3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle2Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat27"
+                android:text="toggle2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle2Button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat24"
+                android:text="toggle2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana36"
+                android:id="@+id/toggle3Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle3Button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat34"
+                android:text="toggle3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab9"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab10"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle3Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat38"
+                android:text="toggle3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana39"
+                android:id="@+id/toggle3Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:text="toggle3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle3Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat37"
+                android:text="toggle3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle4Button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat44"
+                android:text="toggle4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana42"
+                android:id="@+id/toggle4Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana49"
+                android:id="@+id/toggle4Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:text="toggle4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab11"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggle5Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmiana59"
+                android:text="toggle5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab13"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab12"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana46"
+                android:id="@+id/toggle4Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle4Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat48"
+                android:text="toggle4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana52"
+                android:id="@+id/toggle5Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab14"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana56"
+                android:id="@+id/toggle5Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="toggle5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab15"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle5Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat57"
+                android:text="toggle5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle4Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat47"
+                android:text="toggle4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/sbtn1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzatbtn1"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggle6Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmiana69"
+                android:text="toggle6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggle6Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana66"
+                android:text="toggle6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab17"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/toggle6Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat68"
+                android:text="toggle6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab18"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn19"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab19"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn20"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab20"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/toggle6Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana62"
+                android:text="toggle6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab21"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/sbtn2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzatbtn2"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab16"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab22"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab23"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/sbtn5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat58"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmianab24"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/sbtn3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat67"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn26"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab26"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/sbtn4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat64"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn27"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab27"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn25"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab25"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn28"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab28"
+                android:saveEnabled="false"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn29"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmianab29"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <com.example.p1.kraina1.FlashButton2
+                android:id="@+id/btn30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab30"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.example.p1.kraina1.FlashButton
+                android:id="@+id/sbtn6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat54"
+                android:text="ToggleButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Drużyna Maga"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button25"
+                android:text="Menu"        android:background="@drawable/tabbl"          android:layout_width="117dp"         android:layout_height="71dp"         android:layout_marginBottom="17dp"         android:layout_marginRight="15dp"
+        android:onClick="zeruj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="Skrzatów pozostało:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintTop_toTopOf="@+id/editText7"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

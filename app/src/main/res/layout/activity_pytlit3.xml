@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.p1.kraina1.pytlit"
+    android:background="@drawable/pyto"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/pytanie"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="55dp"
+        android:text="Z rozsypanych liter ułóż nazwę owocu i wprowadź go powyżej"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <ImageButton
+        android:id="@+id/button34"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sprawdz"
+        android:onClick="sprawdz"
+        android:text="Sprawdź odpowiedź"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/odpp" />
+
+    <ImageView
+        android:id="@+id/lit7"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/tabbl"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="54dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="169dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp" />
+
+    <EditText
+        android:id="@+id/odpp"
+        android:layout_width="175dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Tu wprowadź odpowiedź"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/lit7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lit7"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/lit2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/imager"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/lit1"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/pytanie"
+        app:layout_constraintTop_toTopOf="@+id/lit1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/lit8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="157dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagea"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/lit5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="157dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imaget" />
+
+    <ImageView
+        android:id="@+id/lit3"
+        android:layout_width="78dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagec"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintRight_toRightOf="@+id/lit7"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/lit4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <ImageView
+        android:id="@+id/lit6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/lit1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/imagey"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/lit6"
+        app:layout_constraintRight_toRightOf="@+id/lit4"
+        android:layout_marginTop="32dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lit4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/lit4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/imagey"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/lit1" />
+
+</android.support.constraint.ConstraintLayout>

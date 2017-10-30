@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pytb"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="     "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp" />
+
+    <com.example.p1.kraina1.FlashButton5
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="30dp"
+        android:onClick="sprawdz1"
+        android:scaleType="fitXY"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.example.p1.kraina1.FlashButton5
+        android:id="@+id/button2"
+        style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+        android:layout_width="150dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="sprawdz2"
+        android:scaleType="fitXY"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.example.p1.kraina1.FlashButton5
+        android:id="@+id/button3"
+        style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="30dp"
+        android:onClick="sprawdz3"
+        android:scaleType="fitXY"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.example.p1.kraina1.FlashButton5
+        android:id="@+id/button4"
+        style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="sprawdz4"
+        android:scaleType="fitXY"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/od2"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="51dp"
+
+        android:layout_marginRight="40dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/od4"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/od4"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="81dp"
+        android:layout_marginRight="40dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/od3"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="81dp"
+        android:layout_marginLeft="40dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/od1"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="40dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/od3"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -26,6 +26,7 @@ import static com.example.p1.kraina1.Menu.kon;
 import static com.example.p1.kraina1.Menu.mp;
 
 public class dobrze extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -16,7 +16,7 @@
         android:layout_width="313dp"
         android:layout_height="73dp"
         android:layout_marginTop="6dp"
-        android:text="Drużyna Czarnoksiężnika"
+        android:text="Zasady gry"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
@@ -57,7 +57,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="79dp"
-        android:text="Drużyna Czarnoksiężnika rozpoczyna grę wybierając dowolne pole na planszy.  Jeśli na polu znajduje się elf drużyna Czarnoksiężnika dostaje jeden punkt za jego znalezienie, następnie wybierają pytanie na planszy według poziomu trudności (za 1 punkt - łatwe, za 2 punkty - średnie, za 3 punkty - trudne) klikając w zamknięty prezent. Poprawna odpowiedź może zaczarować przyjaznego elfa w złośliwego skrzata, za co również otrzymujemy dodatkowy punkt. Błędna odpowiedź nie powoduje zamiany.  Wybierając pytanie możemy natrafić na bonus - przejście przez portal, który doprowadzi do miejsca - niespodzianki.  Jeśli zaś przeszukiwane pole jest puste do szukania przechodzi drużyna Maga"
+        android:text=" Jesteś szefem drużyny, która ma odnaleźć zamienionych elfów skrytych pod drzewami i przywrócić im dawną postać. Aby tego dokonać znajdź miejsce ich pobytu i odpowiedz na pytanie lub wykonaj zadanie. Zły czarownik i jego drużyna szukają elfów, którym udało się zbiec. Zły czarownik by zmienić pozostałe elfy w złe skrzaty musi odgadnąć miejsce ich ukrycia i odpowiedzieć na pytania lub wykonać zadanie.
+Trwa wyścig. Wygra go ten kto pierwszy ustali miejsce pobytu wszystkich poszukiwanych przez siebie elfów/skrzatów i odpowie na pytania. Za znalezienie elfa/skrzata grający otrzymują 1 punkt. Za prawidłową odpowiedź na pytanie lub wykonanie zadania drużyna otrzymuje liczbę punktów stosowną do trudności pytania lub zadania. W niektórych przypadkach grający musi przejść przez wybrany przez siebie portal na końcu którego znajduje się niespodzianka czasem przyjemna czasem przykra.
+"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"

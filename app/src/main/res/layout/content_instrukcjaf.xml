@@ -15,7 +15,7 @@
         android:id="@+id/textView19"
         android:layout_width="267dp"
         android:layout_height="44dp"
-        android:text="Zakończenie gry"
+        android:text="Kto wygrywa?"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
@@ -36,7 +36,14 @@
         android:layout_width="279dp"
         android:layout_height="384dp"
         android:layout_marginStart="39dp"
-        android:text="Gra kończy się w momencie, gdy wszystkie skrzaty zostaną już odnalezione. Wygrywa drużyna, która zdobędzie najwięcej punktów.   Zwycięstwo Maga spowoduje ocalenie magicznej krainy, a zły czarnoksiężnik ucieknie. Zwycięstwo Czarnoksiężnika spowoduje zawładnięcie przez niego całą magiczną krainą, a jego mieszkańcy staną się jego więźniami.  W grze występują różne rodzaje pytań, w niektórych można wybrać prawidłową odpowiedź, natomiast w innych należy odpowiedzieć na głos, a osoba prowadząca zatwierdza poprawną lub błędną odpowiedź."
+        android:text="Wygrywa ta drużyna, która zdobędzie więcej punktów w momencie zakończenia poszukiwań.
+W trakcie gry na tablicy wyników pokazuje się aktualna punktacja stanu poszukiwań.
+Gra jest przeznaczona dla dwóch graczy w kilku wersjach
+Dorosły – dziecko
+Dziecko – dziecko
+Wersje dla dzieci występują w trzech kategoriach wiekowych
+Zapraszamy do wejścia na naszą stronę gdzie można dokonać zarówno wyboru wersji jak i zestawu kategorii pytań
+"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"

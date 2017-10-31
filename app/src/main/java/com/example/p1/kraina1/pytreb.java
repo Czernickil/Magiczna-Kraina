@@ -50,7 +50,7 @@ public class pytreb extends AppCompatActivity {
         poprawne[1][3]="Burak ";
         poprawne[2][3]="Karkonosze ";
         poprawne[3][3]="Makaron ";
-        i =generator.nextInt(4);
+        i =generator.nextInt(8);
         switch(i){
             case(0):
                 rebus.setImageResource(R.drawable.rebus1);

@@ -46,9 +46,9 @@ import static com.example.p1.kraina1.Menu.kon; public class polski2 extends AppC
         odp3 = (TextView) findViewById(R.id.od3);
         odp4 = (TextView) findViewById(R.id.od4);
 
-        i =generator.nextInt(4);
+        i =generator.nextInt(8);
          while(pytztxt.getPytpol2(i, 5).equals("Z"))
-            i =generator.nextInt(4);
+            i =generator.nextInt(8);
         pyt.setText(pytztxt.getPytpol2(i, 0));
         odp1.setText(pytztxt.getPytpol2(i, 1));
         odp2.setText(pytztxt.getPytpol2(i, 2));

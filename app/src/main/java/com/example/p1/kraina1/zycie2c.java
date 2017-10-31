@@ -35,9 +35,9 @@ public class zycie2c extends AppCompatActivity {
         odp3 = (TextView) findViewById(R.id.od3);
         odp4 = (TextView) findViewById(R.id.od4);
 
-        i =generator.nextInt(4);
+        i =generator.nextInt(8);
          while(pytztxt.getPytzyc2(i, 5).equals("Z"))
-            i =generator.nextInt(4);
+            i =generator.nextInt(8);
         pyt.setText(pytztxt.getPytzyc2(i, 0));
         odp1.setText(pytztxt.getPytzyc2(i, 1));
         odp2.setText(pytztxt.getPytzyc2(i, 2));

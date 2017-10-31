@@ -31,7 +31,6 @@ TextView pyt;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pytzab);
         setpytzab();
-        g=1;
         pyt = (TextView)findViewById(R.id.pytanie);
         i =generator.nextInt(7);
         pyt.setText(pytzab[i][0]);
@@ -58,6 +57,7 @@ TextView pyt;
             Menu.wyl=1; startActivity(intent);}
     }
     public void zle(View view) {
+        g=1;
         if (r == 1) {
             Intent intent = new Intent(pytzab.this, zle.class);
             Menu.wyl=1; startActivity(intent);

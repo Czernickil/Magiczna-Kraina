@@ -37,9 +37,9 @@ import static com.example.p1.kraina1.Menu.kon; public class matematyka3c extends
         odp3 = (TextView) findViewById(R.id.od3);
         odp4 = (TextView) findViewById(R.id.od4);
 
-        i =generator.nextInt(4);
+        i =generator.nextInt(8);
          while(pytztxt.getPytmat3(i, 5).equals("Z"))
-            i =generator.nextInt(4);
+            i =generator.nextInt(8);
         pyt.setText(pytztxt.getPytmat3(i, 0));
         odp1.setText(pytztxt.getPytmat3(i, 1));
         odp2.setText(pytztxt.getPytmat3(i, 2));

@@ -69,20 +69,20 @@
     <EditText
         android:id="@+id/odpp"
         android:layout_width="172dp"
-        android:layout_height="34dp"
+        android:layout_height="40dp"
         android:hint="Tu wprowadź odpowiedź"
         android:textColor="@android:color/background_dark"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/lit7"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/lit7"
+        app:layout_constraintVertical_bias="0.454"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintVertical_bias="0.454"
-        app:layout_constraintHorizontal_bias="0.498"
         tools:layout_editor_absoluteY="451dp" />
 
     <ImageView

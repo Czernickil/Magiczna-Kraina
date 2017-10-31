@@ -30,5 +30,10 @@ public static int v;
         Intent intent = new Intent(Intro.this, Menu.class);
         Menu.wyl=1; startActivity(intent);
     }
-
+    public void onPause(){
+        super.onPause();
+        if(Menu.wyl==0){
+            Intro.z=0;             Intro.adp.run();
+        }
+    }
 }

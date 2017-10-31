@@ -9,12 +9,10 @@ import static com.example.p1.kraina1.MainActivity.punkty;
 import static com.example.p1.kraina1.MainActivity.r;
 import static com.example.p1.kraina1.MainActivityc.punktyc;
 import static com.example.p1.kraina1.Menu.kon; public class portal7 extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_portal7);
-
     }
     public void onPause(){
         super.onPause();

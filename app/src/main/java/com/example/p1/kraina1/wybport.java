@@ -30,7 +30,7 @@ import static com.example.p1.kraina1.Menu.kon; public class wybport extends AppC
         }
     public void portall(View view) {
 
-        int i=generator.nextInt(3)+1;
+        int i=generator.nextInt(4)+1;
         Intent intent;
         switch(i){
             case 1:
@@ -45,6 +45,9 @@ import static com.example.p1.kraina1.Menu.kon; public class wybport extends AppC
                 Menu.wyl=1; startActivity(intent);                break;
             case 4:
                 intent = new Intent(wybport.this, portal8.class);
+                Menu.wyl=1; startActivity(intent);                break;
+            case 5:
+                intent = new Intent(wybport.this, portal9.class);
                 Menu.wyl=1; startActivity(intent);                break;}
 
 

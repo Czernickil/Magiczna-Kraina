@@ -311,48 +311,63 @@
         <activity
             android:name=".portal1"
             android:label="@string/title_activity_portal1"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal2"
             android:label="portal2"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal3"
             android:label="portal3"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal4"
             android:label="portal4"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal5"
             android:label="portal5"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal6"
             android:label="portal6"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal7"
             android:label="portal7"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".portal8"
             android:label="portal8"
+            android:hardwareAccelerated="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".portal9"
+            android:label="portal9"
+            android:hardwareAccelerated="false"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />

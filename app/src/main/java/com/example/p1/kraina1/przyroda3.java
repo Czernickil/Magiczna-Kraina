@@ -19,7 +19,7 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.MainActivity.punkty;
 
-import static com.example.p1.kraina1.Menu.kon; public class przyroda3 extends AppCompatActivity {
+import static com.example.p1.kraina1.Menu.kon; public class przyroda3 extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     TextView odp1;
     TextView odp2;
     TextView odp3;

@@ -30,7 +30,7 @@ import static com.example.p1.kraina1.MainActivityc.setsbtncc2;
 import static com.example.p1.kraina1.Menu.kon;
 import static com.example.p1.kraina1.Menu.mp;
 
-public class dobrze3c extends AppCompatActivity {
+public class dobrze3c extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     public void onPause(){
         super.onPause();
         if(Menu.wyl==0){

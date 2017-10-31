@@ -10,7 +10,7 @@ import android.view.View;
 
 
 
-public class Intro extends AppCompatActivity {
+public class Intro extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 public static int v;
     public static int z=1;
     public static AudioPlayer adp= new AudioPlayer();

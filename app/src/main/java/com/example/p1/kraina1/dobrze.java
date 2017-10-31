@@ -25,7 +25,7 @@ import static com.example.p1.kraina1.MainActivityc.*;
 import static com.example.p1.kraina1.Menu.kon;
 import static com.example.p1.kraina1.Menu.mp;
 
-public class dobrze extends AppCompatActivity {
+public class dobrze extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

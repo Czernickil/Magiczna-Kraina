@@ -497,6 +497,7 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(Menu.this, autorzy.class);
         Menu.wyl=1; startActivity(intent);
     }
+    /*
      public void testportal(View view) {
          Random generator = new Random();
          kon=1;
@@ -1837,6 +1838,7 @@ public class Menu extends AppCompatActivity {
          Menu.wyl=1; startActivity(intent);
 
      }
+     */
 
 
     public void voice(View view) {

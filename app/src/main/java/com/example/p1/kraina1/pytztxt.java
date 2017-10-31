@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
-import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppCompatActivity {
+import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     static String[][] pytmat1 = new String[10][7];
     static String[][] pytmat2 = new String[10][7];
     static String[][] pytmat3 = new String[10][7];

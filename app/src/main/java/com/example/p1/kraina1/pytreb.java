@@ -11,7 +11,7 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.MainActivity.r;
 
-public class pytreb extends AppCompatActivity {
+public class pytreb extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     EditText odp;
     ImageView rebus;
 

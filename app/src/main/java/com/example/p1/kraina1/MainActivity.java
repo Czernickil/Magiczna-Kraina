@@ -297,7 +297,7 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivity extends
         }
         builder.setTitle("Tura drużyny maga")
                 .setMessage("")
-                .setPositiveButton("                                ", new DialogInterface.OnClickListener() {
+                .setPositiveButton("", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
                     }

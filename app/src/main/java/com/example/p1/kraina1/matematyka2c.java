@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-import static com.example.p1.kraina1.Menu.kon; public class matematyka2c extends AppCompatActivity {
+import static com.example.p1.kraina1.Menu.kon; public class matematyka2c extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     TextView odp1;
     TextView odp2;
     TextView odp3;

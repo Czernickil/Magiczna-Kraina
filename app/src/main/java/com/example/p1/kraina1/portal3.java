@@ -12,7 +12,7 @@ import static com.example.p1.kraina1.MainActivity.punkty;
 import static com.example.p1.kraina1.MainActivityc.punktyc;
 import static com.example.p1.kraina1.MainActivity.r;
 
-import static com.example.p1.kraina1.Menu.kon; public class portal3 extends AppCompatActivity {
+import static com.example.p1.kraina1.Menu.kon; public class portal3 extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

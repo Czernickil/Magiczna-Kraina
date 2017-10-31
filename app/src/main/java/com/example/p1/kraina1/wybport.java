@@ -11,7 +11,7 @@ import android.view.View;
 import java.util.Random;
 
 
-import static com.example.p1.kraina1.Menu.kon; public class wybport extends AppCompatActivity {
+import static com.example.p1.kraina1.Menu.kon; public class wybport extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     Random generator = new Random();
     @Override
     protected void onCreate(Bundle savedInstanceState) {

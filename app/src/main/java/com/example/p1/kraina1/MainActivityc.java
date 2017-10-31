@@ -287,7 +287,7 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
         }
         builder.setTitle("Tura drużyny czarnoksiężnika")
                 .setMessage("")
-                .setPositiveButton("                                ", new DialogInterface.OnClickListener() {
+                .setPositiveButton("", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // continue with delete
                     }

@@ -8,7 +8,7 @@ import android.view.View;
 import static com.example.p1.kraina1.Menu.kon;
 import static com.example.p1.kraina1.pytzab.g;
 
-public class zlec extends AppCompatActivity {
+public class zlec extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

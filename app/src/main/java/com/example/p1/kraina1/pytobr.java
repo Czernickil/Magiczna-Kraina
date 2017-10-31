@@ -11,7 +11,7 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.MainActivity.r;
 
-public class pytobr extends AppCompatActivity {
+public class pytobr extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     static String[][] pytobr = new String[10][7];
 TextView pyt;
     int i=0;

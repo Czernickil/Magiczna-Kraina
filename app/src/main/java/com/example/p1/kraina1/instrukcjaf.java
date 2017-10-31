@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.view.View;
 
-import static com.example.p1.kraina1.Menu.kon; public class instrukcjaf extends AppCompatActivity {
+import static com.example.p1.kraina1.Menu.kon; public class instrukcjaf extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

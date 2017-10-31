@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class zycie2c extends AppCompatActivity {
+public class zycie2c extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     TextView odp1;
     TextView odp2;
     TextView odp3;

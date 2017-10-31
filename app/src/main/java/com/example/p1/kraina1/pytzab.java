@@ -10,7 +10,7 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.MainActivity.r;
 
-public class pytzab extends AppCompatActivity {
+public class pytzab extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 TextView pyt;
     public static int g=0;
 

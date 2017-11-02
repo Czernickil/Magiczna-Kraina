@@ -38,11 +38,11 @@
         android:layout_marginStart="39dp"
         android:text="Wygrywa ta drużyna, która zdobędzie więcej punktów w momencie zakończenia poszukiwań.
 W trakcie gry na tablicy wyników pokazuje się aktualna punktacja stanu poszukiwań.
-Gra jest przeznaczona dla dwóch graczy w kilku wersjach
-Dorosły – dziecko
-Dziecko – dziecko
-Wersje dla dzieci występują w trzech kategoriach wiekowych
-Zapraszamy do wejścia na naszą stronę gdzie można dokonać zarówno wyboru wersji jak i zestawu kategorii pytań
+Gra jest przeznaczona dla dwóch graczy w kilku wersjach:
+Dorosły – dziecko,
+Dziecko – dziecko.
+Wersje dla dzieci występują w trzech kategoriach wiekowych.
+Zapraszamy do wejścia na naszą stronę gdzie można dokonać zarówno wyboru wersji jak i zestawu kategorii pytań.
 "
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"

@@ -16,7 +16,7 @@ TextView pyt;
 
     int i=0;
     Random generator= new Random();
-    static String[][] pytzab = new String[10][2];
+    static String[][] pytzab = new String[11][2];
     public void onPause(){
         super.onPause();
         if(Menu.wyl==0){
@@ -32,18 +32,22 @@ TextView pyt;
         setContentView(R.layout.activity_pytzab);
         setpytzab();
         pyt = (TextView)findViewById(R.id.pytanie);
-        i =generator.nextInt(7);
+        i =generator.nextInt(11);
         pyt.setText(pytzab[i][0]);
     }
 
     public static void setpytzab() {
-        pytzab[0][0]="Skocz 10 razy";
-        pytzab[1][0]="Zrób 10 przysiadów";
-        pytzab[2][0]="Stój na nodze 10 sekund";
-        pytzab[3][0]="Zrób 10 pompek ";
+        pytzab[0][0]="Skocz w  miejscu 10 razy";
+        pytzab[1][0]="Zrób 20 przysiadów";
+        pytzab[2][0]="Stój na nodze 15 sekund";
+        pytzab[3][0]="Zrób 12 pompek ";
         pytzab[4][0]="Opowiedz dowcip";
         pytzab[5][0]="Zaśpiewaj jakąś piosenkę";
-        pytzab[6][0]="Opowiedz jakąś historię";
+        pytzab[6][0]="Opowiedz jakąś śmieszną historię";
+        pytzab[7][0]="Zrób 20 brzuszków";
+        pytzab[8][0]="Powiedz 3 miłe rzeczy osobie obok";
+        pytzab[9][0]="Odpowiedz na pytanie które zada Ci osoba obok";
+        pytzab[10][0]="Przytul się do osoby obok (jeśli się zgodzi) ";
     }
     void kill_activity()
     {

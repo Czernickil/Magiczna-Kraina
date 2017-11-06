@@ -52,22 +52,20 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="284dp"
-        android:layout_height="379dp"
+        android:layout_width="309dp"
+        android:layout_height="505dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="79dp"
-        android:text=" Jesteś szefem drużyny, która ma odnaleźć zamienionych elfów skrytych pod drzewami i przywrócić im dawną postać. Aby tego dokonać znajdź miejsce ich pobytu i odpowiedz na pytanie lub wykonaj zadanie. Zły czarownik i jego drużyna szukają elfów, którym udało się zbiec. Zły czarownik by zmienić pozostałe elfy w złe skrzaty musi odgadnąć miejsce ich ukrycia i odpowiedzieć na pytania lub wykonać zadanie.
-Trwa wyścig. Wygra go ten kto pierwszy ustali miejsce pobytu wszystkich poszukiwanych przez siebie elfów/skrzatów i odpowie na pytania. Za znalezienie elfa/skrzata grający otrzymują 1 punkt. Za prawidłową odpowiedź na pytanie lub wykonanie zadania drużyna otrzymuje liczbę punktów stosowną do trudności pytania lub zadania. W niektórych przypadkach grający musi przejść przez wybrany przez siebie portal na końcu którego znajduje się niespodzianka czasem przyjemna czasem przykra.
-"
+        android:text="@string/instrukcjaf"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.4" />
+        tools:layout_constraintTop_creator="1" />
 </android.support.constraint.ConstraintLayout>

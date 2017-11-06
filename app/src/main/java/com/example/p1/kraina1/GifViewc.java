@@ -4,16 +4,16 @@ package com.example.p1.kraina1;
  * Created by p1 on 2017-10-27.
  */
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Movie;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class GifViewz extends View {
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+
+public class GifViewc extends View {
 
     private InputStream gifInputStream;
     private Movie gifMovie;
@@ -21,18 +21,18 @@ public class GifViewz extends View {
     private long movieDuration;
     private long mMovieStart;
 
-    public GifViewz(Context context) {
+    public GifViewc(Context context) {
         super(context);
         init(context);
     }
 
-    public GifViewz(Context context, AttributeSet attrs) {
+    public GifViewc(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
 
-    public GifViewz(Context context, AttributeSet attrs,
-                   int defStyleAttr) {
+    public GifViewc(Context context, AttributeSet attrs,
+                    int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context);
     }
@@ -40,7 +40,7 @@ public class GifViewz extends View {
     private void init(Context context){
         setFocusable(true);
         gifInputStream = context.getResources()
-                .openRawResource(R.raw.zlyz);
+                .openRawResource(R.raw.dobry);
 
         //gifMovie = Movie.decodeStream(gifInputStream);
         byte[] array = streamToBytes(gifInputStream);
@@ -103,6 +103,7 @@ public class GifViewz extends View {
 
             gifMovie.draw(canvas, 0, 0);
             invalidate();
+
 
         }
 

@@ -1,7 +1,9 @@
 package com.example.p1.kraina1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
@@ -9,10 +11,14 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import static com.example.Kraina1.context;
 import static com.example.p1.kraina1.MainActivity.r;
 
-public class pytobr extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
-    static String[][] pytobr = new String[10][7];
+public class pytobr extends AppCompatActivity {
+    static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+    static SharedPreferences.Editor editor = prefs.edit();
+    public void onStart(){         super.onStart(); Menu.wyl=0;}
+    static String[][] pytobr = new String[12][7];
 TextView pyt;
     int i=0;
     Random generator= new Random();
@@ -30,13 +36,17 @@ TextView pyt;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pytobr);
-        setpyto();
         pyt = (TextView)findViewById(R.id.pytanie);
         odp1 = (ImageButton) findViewById(R.id.obra);
         odp2 = (ImageButton) findViewById(R.id.obrb);
         odp3 = (ImageButton) findViewById(R.id.rebuss);
-        i =generator.nextInt(4);
-        pyt.setText(pytobr[i][0]);
+        i =generator.nextInt(12);
+        while(pytobr[i][6].equals("Z")){
+            i =generator.nextInt(12);
+        }
+        setobr(i);
+        pyt.setText(pytobr[i][6]);
+
         if(i==0){
         odp1.setImageResource(R.drawable.obrpyt1a);
         odp2.setImageResource(R.drawable.obrpyt1b);
@@ -50,11 +60,46 @@ TextView pyt;
         odp2.setImageResource(R.drawable.obrpyt2b);
         odp3.setImageResource(R.drawable.obrpyt2c);}
         if(i==3){
-            odp1.setImageResource(R.drawable.obrpyt3a);
-        odp2.setImageResource(R.drawable.obrpyt3b);
-        odp3.setImageResource(R.drawable.obrpyt2c);}
+                odp1.setImageResource(R.drawable.obrpyt3a);
+                odp2.setImageResource(R.drawable.obrpyt3b);
+                odp3.setImageResource(R.drawable.obrpyt2c);}
+        if(i==4){
+            odp1.setImageResource(R.drawable.szczoteczka);
+            odp2.setImageResource(R.drawable.flet);
+            odp3.setImageResource(R.drawable.smoczek);}
+        if(i==5){
+            odp1.setImageResource(R.drawable.bebenki);
+            odp2.setImageResource(R.drawable.flet);
+            odp3.setImageResource(R.drawable.konik);}
+        if(i==6){
+            odp1.setImageResource(R.drawable.konik);
+            odp2.setImageResource(R.drawable.flet);
+            odp3.setImageResource(R.drawable.bebenki);}
+        if(i==7){
+            odp1.setImageResource(R.drawable.parasol);
+            odp2.setImageResource(R.drawable.plecak);
+            odp3.setImageResource(R.drawable.konik);}
+        if(i==8){
+            odp1.setImageResource(R.drawable.parasol);
+            odp2.setImageResource(R.drawable.konik);
+            odp3.setImageResource(R.drawable.plecak);}
+        if(i==9){
+            odp1.setImageResource(R.drawable.smoczek);
+            odp2.setImageResource(R.drawable.bebenki);
+            odp3.setImageResource(R.drawable.plecak);}
+        if(i==10){
+            odp1.setImageResource(R.drawable.szczoteczka);
+            odp2.setImageResource(R.drawable.cyrkiel);
+            odp3.setImageResource(R.drawable.parasol);}
+        if(i==11){
+            odp1.setImageResource(R.drawable.plecak);
+            odp2.setImageResource(R.drawable.parasol);
+            odp3.setImageResource(R.drawable.obrpyt2c);}
     }
- void setpyto(){
+ static void setpyto(){
+     for(int i=0; i<12; i++){
+             pytobr[i][6]="W";
+     }
         pytobr[0][0]="Co kosimy kosiarką gdy urośnie?";
      pytobr[0][1]="obrpyt1a";
      pytobr[0][2]="obrpyt1b";
@@ -75,6 +120,47 @@ TextView pyt;
      pytobr[3][2]="obrpyt3b";
      pytobr[3][3]="obrpyt2c";
      pytobr[3][4]="obrpyt3b";
+     pytobr[4][0]="Czym myjemy zęby?";
+     pytobr[4][1]="ok";
+     pytobr[4][2]="";
+     pytobr[4][3]="";
+     pytobr[4][4]="ok";
+     pytobr[5][0]="Który obrazek przedstawia flet?";
+     pytobr[5][1]="";
+     pytobr[5][2]="ok";
+     pytobr[5][3]="";
+     pytobr[5][4]="ok";
+     pytobr[6][0]="Który obrazek przedstawia bębenek?";
+     pytobr[6][1]="";
+     pytobr[6][2]="";
+     pytobr[6][3]="ok";
+     pytobr[6][4]="ok";
+     pytobr[7][0]="Co nas chroni przed deszczem?";
+     pytobr[7][1]="ok";
+     pytobr[7][2]="";
+     pytobr[7][3]="";
+     pytobr[7][4]="ok";
+     pytobr[8][0]="Na czym można usiąść?";
+     pytobr[8][1]="";
+     pytobr[8][2]="ok";
+     pytobr[8][3]="";
+     pytobr[8][4]="ok";
+     pytobr[9][0]="Co mogą mieć w buzi małe dzieci?";
+     pytobr[9][1]="ok";
+     pytobr[9][2]="";
+     pytobr[9][3]="";
+     pytobr[9][4]="ok";
+     pytobr[10][0]="Co pomaga rysowac koło w zeszycie?";
+     pytobr[10][1]="";
+     pytobr[10][2]="ok";
+     pytobr[10][3]="";
+     pytobr[10][4]="ok";
+     pytobr[11][0]="W czym nosimy zeszyty i książki do szkoły??";
+     pytobr[11][1]="ok";
+     pytobr[11][2]="";
+     pytobr[11][3]="";
+     pytobr[11][4]="ok";
+
     }
 
     public void odpa(View view){
@@ -118,4 +204,12 @@ TextView pyt;
         }
 
     }
+    static void setobr(int a ){
+        pytobr[a][6]="Z";
+        editor.putString(a+"obr", "Z");
+        editor.commit();
+    }
+    static String getzaj(String s){
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return preferences.getString(s, "");}
 }

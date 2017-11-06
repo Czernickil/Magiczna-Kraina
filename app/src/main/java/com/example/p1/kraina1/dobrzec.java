@@ -43,7 +43,7 @@ public class dobrzec extends AppCompatActivity {    public void onStart(){      
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dobrze);
+        setContentView(R.layout.activity_dobrzec);
         Random generator = new Random();
         int i=generator.nextInt(2);
         TextView textviev;
@@ -53,7 +53,7 @@ public class dobrzec extends AppCompatActivity {    public void onStart(){      
         if(idskrzat=="skrzatbtn1" || idskrzat=="skrzatbtn2" || idskrzatc=="skrzatcbtnc1" || idskrzatc=="skrzatcbtnc2")
             i=0;
         if(i==1){
-            textviev.setText("Brawo skrzat się zmienił + 3 punkty");
+            textviev.setText("");
 
                 punktyc=punktyc+3;
             switch (idskrzat){
@@ -141,7 +141,7 @@ public class dobrzec extends AppCompatActivity {    public void onStart(){      
             }
 
         }else{
-            textviev.setText("Niestety skrzat się nie zmienił");
+            textviev.setText("");
             switch (idskrzat){
                 case("skrzat4"):
                     setDefaults4("etatToggle4", OFF, this);
@@ -216,19 +216,19 @@ public class dobrzec extends AppCompatActivity {    public void onStart(){      
                     idskrzat="";
                     break;
                 case("skrzatbtn1"):
-                    setsbtncc1("sbtn1", OFF, this);
+                    setsbtncc1("sbtncc1", OFF, this);
                     idskrzat="";
                     break;
                 case("skrzatbtn2"):
-                    setsbtncc2("sbtn2", OFF, this);
+                    setsbtncc2("sbtncc2", OFF, this);
                     idskrzat="";
                     break;
 
             }}
         if(i==1){
-            textviev.setText("Brawo skrzat się zmienił + 3 punkty");
+            textviev.setText("");
 
-            GifView gifView= (GifView) findViewById(R.id.gif);  gifView.setVisibility(View.INVISIBLE);
+            GifViewc gifView= (GifViewc) findViewById(R.id.gifz);  gifView.setVisibility(View.INVISIBLE);
 
 
 
@@ -317,10 +317,10 @@ public class dobrzec extends AppCompatActivity {    public void onStart(){      
             }
 
         }else{
-            textviev.setText("Niestety skrzat się nie zmienił");
+            textviev.setText("");
 
 
-            GifViewz gifView= (GifViewz) findViewById(R.id.gifz);  gifView.setVisibility(View.INVISIBLE);
+            GifViewzc gifView= (GifViewzc) findViewById(R.id.gif);  gifView.setVisibility(View.INVISIBLE);
             switch (idskrzatc){
                 case("skrzatc4"):
                     setDefaults4("etatTogglec4", OFF, this);
@@ -395,11 +395,11 @@ public class dobrzec extends AppCompatActivity {    public void onStart(){      
                     idskrzatc="";
                     break;
                 case("skrzatcbtn1"):
-                    setsbtncc1("sbtn1", OFF, this);
+                    setsbtncc1("sbtncc1", OFF, this);
                     idskrzatc="";
                     break;
                 case("skrzatcbtn2"):
-                    setsbtncc2("sbtn2", OFF, this);
+                    setsbtncc2("sbtncc2", OFF, this);
                     idskrzatc="";
                     break;
 

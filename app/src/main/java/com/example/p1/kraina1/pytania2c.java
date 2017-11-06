@@ -233,242 +233,242 @@ public class pytania2c extends Activity {
         }
 
     public void polski1(View view) {
-        if(togglec1p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec1p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polski2(View view) {
-        if(togglec3p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec3p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polski3(View view) {
-        if(togglec5p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec5p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematyka1(View view) {
-        if(togglec7p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec7p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematyka2(View view) {
-        if(togglec9p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec9p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematyka3(View view) {
-        if(togglec11p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec11p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyroda1(View view) {
-        if(togglec13p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec13p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyroda2(View view) {
-        if(togglec15p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec15p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyroda3(View view) {
-        if(togglec17p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec17p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zycie1(View view) {
-        if(togglec19p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec19p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zycie2(View view) {
-        if(togglec21p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec21p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zycie3(View view) {
-        if(togglec23p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec23p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polski12(View view) {
-        if(togglec2p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec2p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polski22(View view) {
-        if(togglec4p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec4p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polski32(View view) {
-        if(togglec6p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec6p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematyka12(View view) {
-        if(togglec8p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec8p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematyka22(View view) {
-        if(togglec10p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec10p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematyka32(View view) {
-        if(togglec12p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec12p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyroda12(View view) {
-        if(togglec14p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec14p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyroda22(View view) {
-        if(togglec16p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec16p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyroda32(View view) {
-        if(togglec18p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec18p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytlit.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zycie12(View view) {
-        if(togglec20p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec20p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zycie22(View view) {
-        if(togglec22p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec22p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zycie32(View view) {
-        if(togglec24p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(togglec24p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polskia1(View view) {
-        if(toggleca1p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca1p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polskia2(View view) {
-        if(toggleca3p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca3p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polskia3(View view) {
-        if(toggleca5p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca5p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematykaa1(View view) {
-        if(toggleca7p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca7p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematykaa2(View view) {
-        if(toggleca9p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca9p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematykaa3(View view) {
-        if(toggleca11p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca11p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyrodaa1(View view) {
-        if(toggleca13p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca13p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyrodaa2(View view) {
-        if(toggleca15p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca15p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyrodaa3(View view) {
-        if(toggleca17p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca17p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zyciea1(View view) {
-        if(toggleca19p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca19p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zyciea2(View view) {
-        if(toggleca21p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca21p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zyciea3(View view) {
-        if(toggleca23p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca23p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polskia12(View view) {
-        if(toggleca2p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca2p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polskia22(View view) {
-        if(toggleca4p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca4p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void polskia32(View view) {
-        if(toggleca6p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca6p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, polski3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematykaa12(View view) {
-        if(toggleca8p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca8p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematykaa22(View view) {
-        if(toggleca10p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca10p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void matematykaa32(View view) {
-        if(toggleca12p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca12p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, matematyka3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyrodaa12(View view) {
-        if(toggleca14p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca14p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyrodaa22(View view) {
-        if(toggleca16p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca16p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void przyrodaa32(View view) {
-        if(toggleca18p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca18p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, przyroda3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zyciea12(View view) {
-        if(toggleca20p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca20p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie1c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zyciea22(View view) {
-        if(toggleca22p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca22p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie2c.class);
             Menu.wyl=1; startActivity(intent);}
     }}
     public void zyciea32(View view) {
-        if(toggleca24p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i<6 || i>2){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i>2){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
+        if(toggleca24p.getState()!=OFF3){if(i==7){             Intent intent = new Intent(pytania2c.this, pytzab.class);             Menu.wyl=1; startActivity(intent);}else if(i==5 || i==6){             Intent intent = new Intent(pytania2c.this, pytobr.class);             Menu.wyl=1; startActivity(intent);}else if(i==4){             Intent intent = new Intent(pytania2c.this, wybport.class);             Menu.wyl=1; startActivity(intent);}else{
             Intent intent = new Intent(pytania2c.this, zycie3c.class);
             Menu.wyl=1; startActivity(intent);}
     }}

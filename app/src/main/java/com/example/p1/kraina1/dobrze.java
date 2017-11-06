@@ -43,9 +43,8 @@ public class dobrze extends AppCompatActivity {    public void onStart(){       
             i=0;
             if(i==1){
                 punkty=punkty+3;
-                textviev.setText("Brawo skrzat się zmienił + 3 punkty");
-
-                GifViewz gifView= (GifViewz) findViewById(R.id.gifz);  gifView.setVisibility(View.INVISIBLE);
+                textviev.setText("");
+                GifView gifView= (GifView) findViewById(R.id.gif);  gifView.setVisibility(View.INVISIBLE);
 
 
 
@@ -134,9 +133,9 @@ public class dobrze extends AppCompatActivity {    public void onStart(){       
             }
             
         }else{
-                textviev.setText("Niestety skrzat się nie zmienił");
+                textviev.setText("");
 
-                GifView gifView= (GifView) findViewById(R.id.gif);  gifView.setVisibility(View.INVISIBLE);
+                GifViewz gifView= (GifViewz) findViewById(R.id.gifz);  gifView.setVisibility(View.INVISIBLE);
 
 
             switch (idskrzat){
@@ -213,17 +212,17 @@ public class dobrze extends AppCompatActivity {    public void onStart(){       
                     idskrzat="";
                     break;
                 case("skrzatbtn1"):
-                    setsbtncc1("sbtn1", ON, this);
+                    setsbtncc1("sbtncc1", ON, this);
                     idskrzat="";
                     break;
                 case("skrzatbtn2"):
-                    setsbtncc2("sbtn2", ON, this);
+                    setsbtncc2("sbtncc2", ON, this);
                     idskrzat="";
                     break;
 
             }}
         if(i==1){
-            textviev.setText("Brawo skrzat się zmienił + 3 punkty");
+            textviev.setText("");
 
 
             switch (idskrzatc){
@@ -311,7 +310,7 @@ public class dobrze extends AppCompatActivity {    public void onStart(){       
             }
 
         }else{
-            textviev.setText("Niestety skrzat się nie zmienił");
+            textviev.setText("");
 
             switch (idskrzatc){
                 case("skrzatc4"):

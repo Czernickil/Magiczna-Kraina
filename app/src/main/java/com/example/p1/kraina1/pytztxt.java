@@ -1,7 +1,9 @@
 package com.example.p1.kraina1;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +19,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
-import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
+import static com.example.Kraina1.context;
+import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppCompatActivity {
+    static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+    static SharedPreferences.Editor editor = prefs.edit();
+    public void onStart(){         super.onStart(); Menu.wyl=0;}
     static String[][] pytmat1 = new String[10][7];
     static String[][] pytmat2 = new String[10][7];
     static String[][] pytmat3 = new String[10][7];
@@ -196,7 +202,7 @@ import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppC
         pytmat3[1][3]="4 lata";
         pytmat3[1][4]="3 lata";
         pytmat3[1][6]="4 lata";
-        pytmat3[2][0]="Gdy Mira miała 6 lata urodził się jej brat Teo.Ile lat ma teraz Mira jesli Teo ma 18 lata?";
+        pytmat3[2][0]="Gdy Mira miała 6 lat urodził się jej brat Teo.Ile lat ma teraz Mira jesli Teo ma 18 lata?";
         pytmat3[2][1]="12 lat";
         pytmat3[2][2]="18 lat";
         pytmat3[2][3]="24 lata";
@@ -776,40 +782,67 @@ import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppC
     }
     static void zajPytmat1(int a){
         pytmat1[a][5]="Z";
+        editor.putString(a+"mat1", "Z");
+        editor.commit();
     }
-    static void zajPytmat2(int a ){
+    static void zajPytmat2(int a){
         pytmat2[a][5]="Z";
+        editor.putString(a+"mat2", "Z");
+        editor.commit();
     }
-    static void zajPytmat3(int a ){
+    static  void zajPytmat3(int a ){
         pytmat3[a][5]="Z";
+         editor.putString(a+"mat3", "Z");
+         editor.commit();
     }
     static void zajPytpol1(int a ){
         pytpol1[a][5]="Z";
+         editor.putString(a+"pol1", "Z");
+         editor.commit();
     }
-    static void zajPytpol2(int a ){
+    static  void zajPytpol2(int a ){
         pytpol2[a][5]="Z";
+         editor.putString(a+"pol2", "Z");
+         editor.commit();
     }
-    static void zajPytpol3(int a ){
+    static  void zajPytpol3(int a ){
         pytpol3[a][5]="Z";
+         editor.putString(a+"pol3", "Z");
+         editor.commit();
     }
     static void zajPytprz1(int a ){
         pytprz1[a][5]="Z";
+         editor.putString(a+"prz1", "Z");
+         editor.commit();
     }
     static void zajPytprz2(int a ){
         pytprz2[a][5]="Z";
+         editor.putString(a+"prz2", "Z");
+         editor.commit();
     }
     static void zajPytprz3(int a ){
         pytprz3[a][5]="Z";
+         editor.putString(a+"prz3", "Z");
+         editor.commit();
     }
     static void zajPytzyc1(int a ){
         pytzyc1[a][5]="Z";
+         editor.putString(a+"zyc1", "Z");
+         editor.commit();
     }
     static void zajPytzyc2(int a ){
         pytzyc2[a][5]="Z";
+         editor.putString(a+"zyc2", "Z");
+         editor.commit();
     }
     static void zajPytzyc3(int a ){
         pytzyc3[a][5]="Z";
+         editor.putString(a+"zyc3", "Z");
+         editor.commit();
     }
+    static String getzaj(String s){
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+    return preferences.getString(s, "");}
     static String getPytmat1(int a, int b){
         return pytmat1[a][b];
     }

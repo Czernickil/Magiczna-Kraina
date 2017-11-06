@@ -27,6 +27,10 @@ import static com.example.p1.kraina1.MainActivity.r;
 import static com.example.p1.kraina1.MainActivity.skrzaty;
 import static com.example.p1.kraina1.MainActivityc.skrzatyc;
 import static com.example.p1.kraina1.MainActivityc.punktyc;
+import static com.example.p1.kraina1.pytlit.setlit;
+import static com.example.p1.kraina1.pytobr.setpyto;
+import static com.example.p1.kraina1.pytreb.setreb;
+import static com.example.p1.kraina1.pytzab.setpytzab;
 import static com.example.p1.kraina1.pytztxt.*;
 import android.media.MediaPlayer;
 import android.widget.ToggleButton;
@@ -206,6 +210,10 @@ public class Menu extends AppCompatActivity {
         setPytzyc1();
         setPytzyc2();
         setPytzyc3();
+        setpyto();
+        setreb();
+        setpytzab();
+        setlit();
         MainActivityc.setDefaultsc2("etatTogglec2", ON, this);
         MainActivityc.setDefaultsc4("etatTogglec4", AUTOMATIC, this);
         MainActivityc.setDefaultsc6("etatTogglec6", ON, this);
@@ -473,6 +481,74 @@ public class Menu extends AppCompatActivity {
         setPytzyc1();
         setPytzyc2();
         setPytzyc3();
+        setpyto();
+        setreb();
+        setpytzab();
+        setlit();
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"pol1").equals("Z"))
+            pytztxt.pytpol1[i][5]=pytztxt.getzaj(i+"pol1");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"pol2").equals("Z"))
+            pytztxt.pytpol2[i][5]=pytztxt.getzaj(i+"pol2");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"pol3").equals("Z"))
+            pytztxt.pytpol3[i][5]=pytztxt.getzaj(i+"pol3");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"mat1").equals("Z"))
+            pytztxt.pytmat1[i][5]=pytztxt.getzaj(i+"mat1");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"mat2").equals("Z"))
+            pytztxt.pytmat2[i][5]=pytztxt.getzaj(i+"mat2");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"mat3").equals("Z"))
+            pytztxt.pytmat3[i][5]=pytztxt.getzaj(i+"mat3");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"prz1").equals("Z"))
+            pytztxt.pytprz1[i][5]=pytztxt.getzaj(i+"prz1");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"prz2").equals("Z"))
+            pytztxt.pytprz2[i][5]=pytztxt.getzaj(i+"prz2");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"prz3").equals("Z"))
+            pytztxt.pytprz3[i][5]=pytztxt.getzaj(i+"prz3");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"zyc1").equals("Z"))
+            pytztxt.pytzyc1[i][5]=pytztxt.getzaj(i+"zyc1");
+        }
+        for(int i=0; i<8; i++){
+            if(pytztxt.getzaj(i+"zyc2").equals("Z"))
+            pytztxt.pytzyc2[i][5]=pytztxt.getzaj(i+"zyc2");
+        }
+        for(int i=0; i<8; i++){
+        if(pytztxt.getzaj(i+"zyc3").equals("Z"))
+            pytztxt.pytzyc3[i][5]=pytztxt.getzaj(i+"zyc3");
+    }
+        for(int i=0; i<11; i++){
+            if(pytzab.getzaj(i+"zab").equals("Z"))
+                pytzab.pytzab[i][1]=pytztxt.getzaj(i+"zab");
+        }
+        for(int i=0; i<13; i++){
+            if(pytreb.getzaj(i+"reb").equals("Z"))
+                pytreb.poprawne[i][5]=pytztxt.getzaj(i+"reb");
+        }
+        for(int i=0; i<12; i++){
+            if(pytobr.getzaj(i+"zab").equals("Z"))
+                pytobr.pytobr[i][6]=pytztxt.getzaj(i+"obr");
+        }
+        for(int i=0; i<19; i++){
+            if(pytztxt.getzaj(i+"lit").equals("Z"))
+                pytlit.poprawne[i][5]=pytztxt.getzaj(i+"lit");
+        }
         if(r==1){
             Intent intent = new Intent(Menu.this, MainActivity.class);
             Menu.wyl=1; startActivity(intent);}else{

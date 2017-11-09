@@ -37,33 +37,34 @@ import android.widget.ToggleButton;
 import static com.example.p1.kraina1.FlashButton6.*;
 public class Menu extends AppCompatActivity {
     public static int zm=0;
-    FlashButton6 voices;
+
     public static int zc=0;
     public static int kon=0;
      public static int wyl;
      public static MediaPlayer mp;
-
+    public static int k=0;
+    public static int pp=0;
      int soundId;
      double czas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        voices= (FlashButton6) findViewById(R.id.voiced);
+
             }
-    public void onStart(){
-        super.onStart(); Menu.wyl=0;
-        zm=(int)getzm("a", this);
-        zc=(int)getzc("b", this);
-        punkty=(int)getpm("c", this);
-        punktyc=(int)getpc("d", this);
-        skrzaty=(int)getsm("a", this);
-        skrzatyc=(int)getsc("b", this);
-        if(Intro.z==0){
-            voices.setState(FlashEnum6.OFF6);
-        }else
-            voices.setState(FlashEnum6.ON6);
+    public void onStart() {
+        super.onStart();
+        Menu.wyl = 0;
+        zm = (int) getzm("a", this);
+        zc = (int) getzc("b", this);
+        k = (int) getk("k", this);
+        punkty = (int) getpm("c", this);
+        punktyc = (int) getpc("d", this);
+        skrzaty = (int) getsm("a", this);
+        skrzatyc = (int) getsc("b", this);
     }
+
+
      public void onPause(){
          super.onPause();
          if(wyl==0){
@@ -80,6 +81,7 @@ public class Menu extends AppCompatActivity {
         setzc("f", skrzatyc, this);
         setpm("c", punkty, this);
         setpc("d", punktyc, this);
+        setk("k", k, this);
     }
      public static void setpm(String key, int value, Context context)
      {
@@ -193,7 +195,26 @@ public class Menu extends AppCompatActivity {
          } catch(NumberFormatException nfe) {}
          return scs;
      }
+    public static void setk(String key, int value, Context context)
+    {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(key, Integer.toString(value));
+        editor.commit();
+    }
+
+    public static int getk(String key, Context context)
+    {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        String zmss = preferences.getString(key, "0");
+        int scs=0;
+        try {
+            scs = Integer.parseInt(zmss);
+        } catch(NumberFormatException nfe) {}
+        return scs;
+    }
     public void nowa(View view) {
+        k=1;
         Random generator = new Random();
         kon=1;
         zm=generator.nextInt(10)+1;
@@ -467,6 +488,9 @@ public class Menu extends AppCompatActivity {
     }
 
     public void kontynuacja(View view) {
+        if(k==0){
+            this.nowa(view);
+        }
         skrzaty=getsm("bbbbm", this);
         skrzatyc=getsc("bbbbc", this);
         setPytmat1();
@@ -571,6 +595,10 @@ public class Menu extends AppCompatActivity {
     }
     public void autorzy(View view){
         Intent intent = new Intent(Menu.this, autorzy.class);
+        Menu.wyl=1; startActivity(intent);
+    }
+    public void opcje(View view){
+        Intent intent = new Intent(Menu.this, opcje.class);
         Menu.wyl=1; startActivity(intent);
     }
     /*
@@ -1917,16 +1945,8 @@ public class Menu extends AppCompatActivity {
      */
 
 
-    public void voice(View view) {
-        if(voices.getState()== FlashButton6.FlashEnum6.ON6){
-            Intro.z=0;
-            Intro.adp.run();
-        }else{
-            Intro.z=1;
-            Intro.adp.run();
-        }
 
-    }
+
 }
 
 

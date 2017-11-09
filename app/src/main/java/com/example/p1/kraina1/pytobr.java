@@ -45,7 +45,7 @@ TextView pyt;
             i =generator.nextInt(12);
         }
         setobr(i);
-        pyt.setText(pytobr[i][6]);
+        pyt.setText(pytobr[i][0]);
 
         if(i==0){
         odp1.setImageResource(R.drawable.obrpyt1a);

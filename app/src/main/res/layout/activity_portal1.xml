@@ -126,8 +126,8 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="0dp"
-        android:layout_height="111dp"
+        android:layout_width="362dp"
+        android:layout_height="242dp"
         android:text="Brawo trafiłeś na kulę mocy zdobywasz 3 punkty"
         android:textAlignment="center"
         android:textColor="@android:color/holo_orange_light"
@@ -139,5 +139,6 @@
         tools:layout_constraintRight_creator="1"
         android:layout_marginTop="7dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

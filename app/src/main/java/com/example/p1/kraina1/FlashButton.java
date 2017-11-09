@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
+import static com.example.p1.kraina1.MainActivity.skrzaty;
 import static com.example.p1.kraina1.Menu.kon; public class FlashButton extends android.support.v7.widget.AppCompatImageButton {
 
 
@@ -50,9 +51,10 @@ import static com.example.p1.kraina1.Menu.kon; public class FlashButton extends 
 
         int next = ((mState.ordinal() + 1) % FlashEnum.values().length);
         if (getState()==FlashEnum.AUTOMATIC){
-            if(MainActivity.r==1)
+            skrzaty++;
+            if(MainActivity.s==1)
         setState(FlashEnum.ON);
-            if(MainActivity.r==0)
+            if(MainActivity.s==0)
                 setState(FlashEnum.OFF);
         performFlashClick();
         return true;}

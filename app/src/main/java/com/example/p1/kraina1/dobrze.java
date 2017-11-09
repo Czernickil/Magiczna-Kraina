@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import java.util.Random;
-
+import static com.example.p1.kraina1.MainActivity.s;
 import static com.example.p1.kraina1.FlashButton.FlashEnum.OFF;
 import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
 import static com.example.p1.kraina1.MainActivity.punkty;
@@ -40,361 +40,187 @@ public class dobrze extends AppCompatActivity {    public void onStart(){       
         TextView textviev;
         textviev = (TextView) findViewById(R.id.textView3);
         if(idskrzat=="skrzatbtn1" || idskrzat=="skrzatbtn2" || idskrzatc=="skrzatcbtnc1" || idskrzatc=="skrzatcbtnc2")
-            i=0;
-            if(i==1){
+            s=0;
+            if(s==1){
                 punkty=punkty+3;
                 textviev.setText("");
                 GifView gifView= (GifView) findViewById(R.id.gif);  gifView.setVisibility(View.INVISIBLE);
 
 
 
-            switch (idskrzat){
-                case("skrzat4"):
-                    setDefaults4("etatToggle4", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat7"):
-                    setDefaults7("etatToggle7", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat8"):
-                    setDefaults8("etatToggle8", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat24"):
-                    setDefaults24("etatToggle24", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat27"):
-                    setDefaults7("etatToggle27", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat28"):
-                    setDefaults8("etatToggle28", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat34"):
-                    setDefaults4("etatToggle34", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat37"):
-                    setDefaults7("etatToggle37", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat38"):
-                    setDefaults8("etatToggle38", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat44"):
-                    setDefaults4("etatToggle44", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat47"):
-                    setDefaults7("etatToggle47", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat48"):
-                    setDefaults8("etatToggle48", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat54"):
-                    setDefaults4("etatToggle54", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat57"):
-                    setDefaults7("etatToggle57", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat58"):
-                    setDefaults8("etatToggle58", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat64"):
-                    setDefaults4("etatToggle64", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat67"):
-                    setDefaults7("etatToggle67", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzat68"):
-                    setDefaults8("etatToggle68", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzatbtn1"):
-                    setDefaults4("etatToggle4", OFF, this);
-                    idskrzat="";
-                    break;
-                case("skrzatbtn2"):
-                    setDefaults7("etatToggle7", OFF, this);
-                    idskrzat="";
-                    break;
+                switch (idskrzat){
+                    case("skrzat4"):
+                        setDefaults4("etatToggle4", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat7"):
+                        setDefaults7("etatToggle7", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat8"):
+                        setDefaults8("etatToggle8", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat24"):
+                        setDefaults24("etatToggle24", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat27"):
+                        setDefaults27("etatToggle27", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat28"):
+                        setDefaults28("etatToggle28", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat34"):
+                        setDefaults34("etatToggle34", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat37"):
+                        setDefaults37("etatToggle37", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat38"):
+                        setDefaults38("etatToggle38", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat44"):
+                        setDefaults44("etatToggle44", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat47"):
+                        setDefaults47("etatToggle47", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat48"):
+                        setDefaults48("etatToggle48", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat54"):
+                        setDefaults54("etatToggle54", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat57"):
+                        setDefaults57("etatToggle57", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat58"):
+                        setDefaults58("etatToggle58", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat64"):
+                        setDefaults64("etatToggle64", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat67"):
+                        setDefaults67("etatToggle67", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat68"):
+                        setDefaults68("etatToggle68", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzatbtn1"):
+                        setsbtn1("sbtn1", OFF, this);
+                        idskrzat="";
+                        break;
+                    case("skrzatbtn2"):
+                        setsbtn2("sbtn2", OFF, this);
+                        idskrzat="";
+                        break;
 
-            }
-            
-        }else{
+                }
+
+            }else{
                 textviev.setText("");
 
-                GifViewz gifView= (GifViewz) findViewById(R.id.gifz);  gifView.setVisibility(View.INVISIBLE);
+                GifViewz gifView= (GifViewz) findViewById(R.id.gifz);
+
+                gifView.setVisibility(View.INVISIBLE);
 
 
-            switch (idskrzat){
-                case("skrzat4"):
-                    setDefaults4("etatToggle4", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat7"):
-                    setDefaults7("etatToggle7", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat8"):
-                    setDefaults8("etatToggle8", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat24"):
-                    setDefaults24("etatToggle24", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat27"):
-                    setDefaults7("etatToggle27", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat28"):
-                    setDefaults8("etatToggle28", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat34"):
-                    setDefaults4("etatToggle34", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat37"):
-                    setDefaults7("etatToggle37", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat38"):
-                    setDefaults8("etatToggle38", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat44"):
-                    setDefaults4("etatToggle44", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat47"):
-                    setDefaults7("etatToggle47", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat48"):
-                    setDefaults8("etatToggle48", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat54"):
-                    setDefaults4("etatToggle54", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat57"):
-                    setDefaults7("etatToggle57", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat58"):
-                    setDefaults8("etatToggle58", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat64"):
-                    setDefaults4("etatToggle64", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat67"):
-                    setDefaults7("etatToggle67", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzat68"):
-                    setDefaults8("etatToggle68", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzatbtn1"):
-                    setsbtncc1("sbtncc1", ON, this);
-                    idskrzat="";
-                    break;
-                case("skrzatbtn2"):
-                    setsbtncc2("sbtncc2", ON, this);
-                    idskrzat="";
-                    break;
-
-            }}
-        if(i==1){
-            textviev.setText("");
-
-
-            switch (idskrzatc){
-                case("skrzatc4"):
-                    setDefaults4("etatTogglec4", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc7"):
-                    setDefaults7("etatTogglec7", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc8"):
-                    setDefaults8("etatTogglec8", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc24"):
-                    setDefaults24("etatTogglec24", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc27"):
-                    setDefaults7("etatTogglec27", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc28"):
-                    setDefaults8("etatTogglec28", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc34"):
-                    setDefaults4("etatTogglec34", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc37"):
-                    setDefaults7("etatTogglec37", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc38"):
-                    setDefaults8("etatTogglec38", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc44"):
-                    setDefaults4("etatTogglec44", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc47"):
-                    setDefaults7("etatTogglec47", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc48"):
-                    setDefaults8("etatTogglec48", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc54"):
-                    setDefaults4("etatTogglec54", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc57"):
-                    setDefaults7("etatTogglec57", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc58"):
-                    setDefaults8("etatTogglec58", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc64"):
-                    setDefaults4("etatTogglec64", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc67"):
-                    setDefaults7("etatTogglec67", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc68"):
-                    setDefaults8("etatTogglec68", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatcbtn1"):
-                    setDefaults4("etatTogglec4", OFF, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatcbtn2"):
-                    setDefaults7("etatTogglec7", OFF, this);
-                    idskrzatc="";
-                    break;
-
-            }
-
-        }else{
-            textviev.setText("");
-
-            switch (idskrzatc){
-                case("skrzatc4"):
-                    setDefaults4("etatTogglec4", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc7"):
-                    setDefaults7("etatTogglec7", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc8"):
-                    setDefaults8("etatTogglec8", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc24"):
-                    setDefaults24("etatTogglec24", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc27"):
-                    setDefaults7("etatTogglec27", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc28"):
-                    setDefaults8("etatTogglec28", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc34"):
-                    setDefaults4("etatTogglec34", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc37"):
-                    setDefaults7("etatTogglec37", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc38"):
-                    setDefaults8("etatTogglec38", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc44"):
-                    setDefaults4("etatTogglec44", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc47"):
-                    setDefaults7("etatTogglec47", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc48"):
-                    setDefaults8("etatTogglec48", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc54"):
-                    setDefaults4("etatTogglec54", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc57"):
-                    setDefaults7("etatTogglec57", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc58"):
-                    setDefaults8("etatTogglec58", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc64"):
-                    setDefaults4("etatTogglec64", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc67"):
-                    setDefaults7("etatTogglec67", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatc68"):
-                    setDefaults8("etatTogglec68", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatcbtn1"):
-                    setsbtncc1("sbtncc1", ON, this);
-                    idskrzatc="";
-                    break;
-                case("skrzatcbtn2"):
-                    setsbtncc2("sbtncc2", ON, this);
-                    idskrzatc="";
-                    break;
-
-            }
+                switch (idskrzat){
+                    case("skrzat4"):
+                        setDefaults4("etatToggle4", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat7"):
+                        setDefaults7("etatToggle7", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat8"):
+                        setDefaults8("etatToggle8", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat24"):
+                        setDefaults24("etatToggle24", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat27"):
+                        setDefaults27("etatToggle27", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat28"):
+                        setDefaults28("etatToggle28", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat34"):
+                        setDefaults34("etatToggle34", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat37"):
+                        setDefaults37("etatToggle37", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat38"):
+                        setDefaults38("etatToggle38", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat44"):
+                        setDefaults44("etatToggle44", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat47"):
+                        setDefaults47("etatToggle47", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat48"):
+                        setDefaults48("etatToggle48", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat54"):
+                        setDefaults54("etatToggle54", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat57"):
+                        setDefaults57("etatToggle57", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat58"):
+                        setDefaults58("etatToggle58", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat64"):
+                        setDefaults64("etatToggle64", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat67"):
+                        setDefaults67("etatToggle67", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzat68"):
+                        setDefaults68("etatToggle68", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzatbtn1"):
+                        setsbtn1("sbtn1", ON, this);
+                        idskrzat="";
+                        break;
+                    case("skrzatbtn2"):
+                        setsbtn2("sbtn2", ON, this);
+                        idskrzat="";
+                        break;}
     }}
     public static int getDefaultsp(String key, Context context)
     {

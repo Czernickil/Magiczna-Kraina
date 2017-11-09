@@ -2,7 +2,7 @@ package com.example.p1.kraina1;
 
 import android.content.Context;
 import android.util.AttributeSet;
-
+import static com.example.p1.kraina1.MainActivityc.skrzatyc;
 public class FlashButtonc extends android.support.v7.widget.AppCompatImageButton {
 
 
@@ -49,9 +49,10 @@ public class FlashButtonc extends android.support.v7.widget.AppCompatImageButton
 
         int next = ((mState.ordinal() + 1) % FlashEnum.values().length);
         if (getState()== FlashEnum.AUTOMATIC){
-            if(MainActivity.r==1)
+            skrzatyc++;
+            if(MainActivityc.s==1)
         setState(FlashEnum.ON);
-            if(MainActivity.r==0)
+            if(MainActivityc.s==0)
                 setState(FlashEnum.OFF);
         performFlashClick();
         return true;}

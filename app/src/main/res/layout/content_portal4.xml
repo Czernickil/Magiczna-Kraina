@@ -7,42 +7,42 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.p1.kraina1.portal4"
     android:background="@drawable/portal4"
-    tools:showIn="@layout/activity_portal4">
+    tools:showIn="@layout/activity_portal4"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <Button
         android:id="@+id/button33"
         android:layout_width="166dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="480dp"
         android:background="@drawable/dalej"
         android:onClick="powrot"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintLeft_creator="1" />
+        android:layout_marginTop="6dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="0dp"
-        android:layout_height="111dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginRight="41dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="447dp"
+        android:layout_height="229dp"
         android:text="Brawo trafiłeś na kryształ mocy zdobywasz 1 punkt"
         android:textAlignment="center"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.506"
         tools:layout_constraintRight_creator="1"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button33"
-        app:layout_constraintVertical_bias="0.107" />
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp" />
 </android.support.constraint.ConstraintLayout>

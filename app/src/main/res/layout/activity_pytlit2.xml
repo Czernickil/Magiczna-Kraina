@@ -14,7 +14,7 @@
         android:id="@+id/pytanie"
         android:layout_width="0dp"
         android:layout_height="79dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="57dp"
         android:layout_marginEnd="41dp"
         android:layout_marginLeft="41dp"
         android:layout_marginRight="41dp"
@@ -30,7 +30,7 @@
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintHorizontal_bias="0.487" />
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <ImageButton
         android:id="@+id/button34"
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginEnd="54dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="167dp"
+        android:layout_marginBottom="153dp"
         android:layout_marginLeft="54dp"
         android:layout_marginRight="54dp" />
 

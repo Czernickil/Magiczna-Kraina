@@ -23,12 +23,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 
+import static com.example.Kraina1.context;
 import static com.example.p1.kraina1.FlashButtonc.FlashEnum.AUTOMATIC;
 import static com.example.p1.kraina1.FlashButton.FlashEnum.OFF;
 import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
 import static com.example.p1.kraina1.FlashButton2c.FlashEnum2.ON2;
 import static com.example.p1.kraina1.MainActivity.punkty;
 import static com.example.p1.kraina1.MainActivity.skrzaty;
+import static com.example.p1.kraina1.Menu.pp;
 import static com.example.p1.kraina1.Menu.setpc;
 import static com.example.p1.kraina1.Menu.setpm;
 import static com.example.p1.kraina1.Menu.setsc;
@@ -37,11 +39,14 @@ import static com.example.p1.kraina1.Menu.zc;
 
 import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extends AppCompatActivity {
     Random generator = new Random();
+    static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+    static SharedPreferences.Editor editor = prefs.edit();
     public static int sbc1=0;
     public static int sbc2=0;
     public static int punktyc;
     public static int gc;
     public static int skrzatyc;
+    public static int s;
     public static String idskrzatc="";
     FlashButton2c togglec2;
     FlashButtonc togglec4;
@@ -279,6 +284,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     public void onStart(){
         super.onStart(); Menu.wyl=0;
 // 1
+        s=generator.nextInt(2);
+        if(pp!=0){
         AlertDialog.Builder builder;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             builder = new AlertDialog.Builder(MainActivityc.this, android.R.style.Theme_Material_Dialog_Alert);
@@ -297,12 +304,13 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
                         // do nothing
                     }
                 })
-                .show();
+                .show();}
         setpm("c", punkty, this);
         setpc("d", punktyc, this);
         setsm("bbbbm", skrzaty, this);
         setsc("bbbbc", skrzatyc, this);
         MainActivity.r=0;
+
         if(skrzatyc==20){
             Intent intent = new Intent(MainActivityc.this, Koniecc.class);
             Menu.wyl=1; startActivity(intent);
@@ -349,14 +357,6 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
         togglec67.setState(getDefaultsc67("etatTogglec67",this));
         togglec68.setState(getDefaultsc68("etatTogglec68",this));
         togglec69.setState(getDefaultsc69("etatTogglec69",this));
-      /*  if(sbc1==0)
-       sbtncc1.setState(AUTOMATIC);
-        if(sbc2==0)
-        sbtncc2.setState(AUTOMATIC);
-        if(sbc1==1)
-            sbtncc1.setState(OFF);
-        if(sbc2==1)
-           sbtncc2.setState(OFF); */
         sbtncc1.setState(getsbtncc1("sbtncc1",this));
         sbtncc2.setState(getsbtncc2("sbtncc2",this));
         btnc1.setState(getbtnc1("btnc1",this));
@@ -542,8 +542,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc2(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -557,8 +557,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc4(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -572,8 +572,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc6(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -586,8 +586,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc7(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -600,8 +600,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc8(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -614,8 +614,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc9(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -629,8 +629,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     //2
     public static void setDefaultsc22(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -644,8 +644,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc24(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -659,8 +659,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc26(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -673,8 +673,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc27(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -687,8 +687,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc28(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -701,8 +701,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc29(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -716,8 +716,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     //3
     public static void setDefaultsc32(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -731,8 +731,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc34(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -746,8 +746,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc36(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -760,8 +760,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc37(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -774,8 +774,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc38(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -788,8 +788,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc39(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -803,8 +803,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     //4
     public static void setDefaultsc42(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -818,8 +818,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc44(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -833,8 +833,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc46(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -847,8 +847,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc47(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -861,8 +861,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc48(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -875,8 +875,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc49(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -890,8 +890,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     //5
     public static void setDefaultsc52(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -905,8 +905,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc54(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -920,8 +920,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc56(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -934,8 +934,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc57(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -948,8 +948,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc58(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -962,8 +962,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc59(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -977,8 +977,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     //6
     public static void setDefaultsc62(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -992,8 +992,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc64(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1007,8 +1007,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setDefaultsc66(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1021,8 +1021,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc67(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1035,8 +1035,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc68(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1049,8 +1049,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultsc69(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1063,15 +1063,15 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setDefaultscp(String key, int value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putInt(key, value);
         editor.commit();
     }
     public static void setsbtncc1(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1084,8 +1084,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setsbtncc2(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1104,8 +1104,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
 
     public static void setbtnc2(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1118,8 +1118,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc1(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1137,8 +1137,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc7(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1151,8 +1151,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc8(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1165,8 +1165,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc9(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1179,8 +1179,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc10(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1193,8 +1193,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc11(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1207,8 +1207,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc12(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1221,8 +1221,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc13(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1235,8 +1235,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc14(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1249,8 +1249,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc15(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1263,8 +1263,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc16(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1277,8 +1277,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc17(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1291,8 +1291,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc18(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1305,8 +1305,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc19(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1319,8 +1319,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc20(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1333,8 +1333,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc21(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1347,8 +1347,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc22(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1361,8 +1361,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc23(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1375,8 +1375,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc24(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1389,8 +1389,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc25(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1403,8 +1403,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc26(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1417,8 +1417,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc27(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1431,8 +1431,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc28(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1445,8 +1445,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc29(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1459,8 +1459,8 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     }
     public static void setbtnc30(String key, Enum value, Context context)
     {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = prefs.edit();
+
+
         editor.putString(key, value.toString());
         editor.commit();
     }
@@ -1468,42 +1468,42 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     public void skrzat4(View view) {
         if(AUTOMATIC == togglec4.getState()){
             idskrzatc="skrzatc4";
-       skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+        punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
         Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat7(View view) {
         if(AUTOMATIC == togglec7.getState()){
             idskrzatc="skrzatc7";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat8(View view) {
         if(AUTOMATIC == togglec8.getState()){
             idskrzatc="skrzatc8";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat24(View view) {
         if(AUTOMATIC == togglec24.getState()){
             idskrzatc="skrzatc24";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat27(View view) {
         if(AUTOMATIC == togglec27.getState()){
             idskrzatc="skrzatc27";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat28(View view) {
         if(AUTOMATIC == togglec28.getState()){
             idskrzatc="skrzatc28";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
@@ -1511,21 +1511,21 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     public void skrzat34(View view) {
         if(AUTOMATIC == togglec34.getState()){
             idskrzatc="skrzatc34";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat37(View view) {
         if(AUTOMATIC == togglec37.getState()){
             idskrzatc="skrzatc37";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat38(View view) {
         if(AUTOMATIC == togglec38.getState()){
             idskrzatc="skrzatc38";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
@@ -1533,21 +1533,21 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     public void skrzat44(View view) {
         if(AUTOMATIC == togglec44.getState()){
             idskrzatc="skrzatc44";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat47(View view) {
         if(AUTOMATIC == togglec47.getState()){
             idskrzatc="skrzatc47";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat48(View view) {
         if(AUTOMATIC == togglec48.getState()){
             idskrzatc="skrzatc48";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
@@ -1555,21 +1555,21 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     public void skrzat54(View view) {
         if(AUTOMATIC == togglec54.getState()){
             idskrzatc="skrzatc54";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat57(View view) {
         if(AUTOMATIC == togglec57.getState()){
             idskrzatc="skrzatc57";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat58(View view) {
         if(AUTOMATIC == togglec58.getState()){
             idskrzatc="skrzatc58";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
@@ -1577,21 +1577,21 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
     public void skrzat64(View view) {
         if(AUTOMATIC == togglec64.getState()){
             idskrzatc="skrzatc64";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat67(View view) {
         if(AUTOMATIC == togglec67.getState()){
             idskrzatc="skrzatc67";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
     public void skrzat68(View view) {
         if(AUTOMATIC == togglec68.getState()){
             idskrzatc="skrzatc68";
-           skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+            punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
@@ -1599,7 +1599,7 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
         if(AUTOMATIC == sbtncc1.getState()){
             idskrzatc="skrzatcbtnc1";
             sbc1=1;
-            skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+             punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }
@@ -1607,7 +1607,7 @@ import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extend
         if(AUTOMATIC == sbtncc2.getState()){
             idskrzatc="skrzatcbtnc2";
             sbc2=1;
-            skrzatyc++; punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
+             punktyc++;  Intent intent = new Intent(MainActivityc.this, pytania2c.class);
             Menu.wyl=1; startActivity(intent);}
 
     }

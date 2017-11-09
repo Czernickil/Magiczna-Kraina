@@ -29,8 +29,8 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="0dp"
-        android:layout_height="142dp"
+        android:layout_width="299dp"
+        android:layout_height="233dp"
         android:layout_marginEnd="37dp"
         android:layout_marginStart="37dp"
         android:text="Brawo trafiłeś na portal mocy zdobywasz 1 punkt"
@@ -47,5 +47,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="37dp"
         android:layout_marginRight="37dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_editor_absoluteY="256dp" />
 </android.support.constraint.ConstraintLayout>

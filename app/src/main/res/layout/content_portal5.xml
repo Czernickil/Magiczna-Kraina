@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.p1.kraina1.portal5"
+    tools:context="lukasz.p1.kraina1.portal5"
     android:background="@drawable/image17"
     tools:showIn="@layout/activity_portal5">
 
@@ -42,7 +42,7 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1" />
 
-    <com.example.p1.kraina1.GifViewportal
+    <lukasz.p1.kraina1.GifViewportal
         android:id="@+id/gif"
         android:layout_width="200dp"
         android:layout_height="200dp"

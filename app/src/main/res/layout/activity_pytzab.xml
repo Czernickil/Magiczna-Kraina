@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pyto"
-    tools:context="com.example.p1.kraina1.pytzab">
+    tools:context="lukasz.p1.kraina1.pytzab">
 
     <TextView
         android:id="@+id/pytanie"

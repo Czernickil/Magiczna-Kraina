@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.p1.kraina1">
+    package="lukasz.p1.kraina1">
 
     <application
         android:name="com.example.Kraina1"
@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity
             android:name=".MainActivity"
+
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -36,7 +37,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.p1.kraina1.pytania2" />
+                android:value="lukasz.p1.kraina1.pytania2" />
         </activity>
         <activity
             android:name=".polski2"
@@ -47,7 +48,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.p1.kraina1.pytania2" />
+                android:value="lukasz.p1.kraina1.pytania2" />
         </activity>
         <activity
             android:name=".matematyka1"
@@ -58,7 +59,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.p1.kraina1.pytania2" />
+                android:value="lukasz.p1.kraina1.pytania2" />
         </activity>
         <activity
             android:name=".matematyka2"
@@ -69,7 +70,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.p1.kraina1.pytania2" />
+                android:value="lukasz.p1.kraina1.pytania2" />
         </activity>
         <activity
             android:name=".dobrzec"

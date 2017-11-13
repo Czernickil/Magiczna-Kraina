@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#fee342"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.p1.kraina1.Intro">
+    tools:context="lukasz.p1.kraina1.Intro">
 
     <TextView
         android:id="@+id/textView22"

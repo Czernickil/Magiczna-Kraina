@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 /**
  * Created by p1 on 2017-10-27.

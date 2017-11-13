@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.p1.kraina1.autorzy"
+    tools:context="lukasz.p1.kraina1.autorzy"
     android:background="@drawable/image69"
     tools:showIn="@layout/activity_autorzy"
     tools:layout_editor_absoluteY="81dp"

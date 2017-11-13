@@ -41,7 +41,7 @@
         tools:layout_constraintTop_creator="1"
         app:layout_constraintHorizontal_bias="0.511" />
 
-    <com.example.p1.kraina1.GifView
+    <lukasz.p1.kraina1.GifView
         android:id="@+id/gif"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -54,7 +54,7 @@
         tools:layout_constraintRight_creator="1"
         app:layout_constraintHorizontal_bias="0.501" />
 
-    <com.example.p1.kraina1.GifViewz
+    <lukasz.p1.kraina1.GifViewz
         android:id="@+id/gifz"
         android:layout_width="150dp"
         android:layout_height="150dp"

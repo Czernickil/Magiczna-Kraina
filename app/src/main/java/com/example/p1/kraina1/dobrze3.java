@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,37 +14,37 @@ import android.widget.VideoView;
 
 import java.util.Random;
 
-import static com.example.p1.kraina1.FlashButton.FlashEnum.OFF;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
-import static com.example.p1.kraina1.MainActivity.idskrzat;
-import static com.example.p1.kraina1.MainActivity.punkty;
-import static com.example.p1.kraina1.MainActivity.setDefaults24;
-import static com.example.p1.kraina1.MainActivity.setDefaults27;
-import static com.example.p1.kraina1.MainActivity.setDefaults28;
-import static com.example.p1.kraina1.MainActivity.setDefaults34;
-import static com.example.p1.kraina1.MainActivity.setDefaults37;
-import static com.example.p1.kraina1.MainActivity.setDefaults38;
-import static com.example.p1.kraina1.MainActivity.setDefaults4;
-import static com.example.p1.kraina1.MainActivity.setDefaults44;
-import static com.example.p1.kraina1.MainActivity.setDefaults47;
-import static com.example.p1.kraina1.MainActivity.setDefaults48;
-import static com.example.p1.kraina1.MainActivity.setDefaults54;
-import static com.example.p1.kraina1.MainActivity.setDefaults57;
-import static com.example.p1.kraina1.MainActivity.setDefaults58;
-import static com.example.p1.kraina1.MainActivity.setDefaults64;
-import static com.example.p1.kraina1.MainActivity.setDefaults67;
-import static com.example.p1.kraina1.MainActivity.setDefaults68;
-import static com.example.p1.kraina1.MainActivity.setDefaults7;
-import static com.example.p1.kraina1.MainActivity.setDefaults8;
-import static com.example.p1.kraina1.MainActivity.setsbtn1;
-import static com.example.p1.kraina1.MainActivity.setsbtn2;
-import static com.example.p1.kraina1.MainActivityc.idskrzatc;
-import static com.example.p1.kraina1.MainActivityc.punktyc;
-import static com.example.p1.kraina1.MainActivityc.setsbtncc1;
-import static com.example.p1.kraina1.MainActivityc.setsbtncc2;
-import static com.example.p1.kraina1.MainActivity.s;
-import static com.example.p1.kraina1.Menu.kon;
-import static com.example.p1.kraina1.Menu.mp;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.OFF;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.ON;
+import static lukasz.p1.kraina1.MainActivity.idskrzat;
+import static lukasz.p1.kraina1.MainActivity.punkty;
+import static lukasz.p1.kraina1.MainActivity.setDefaults24;
+import static lukasz.p1.kraina1.MainActivity.setDefaults27;
+import static lukasz.p1.kraina1.MainActivity.setDefaults28;
+import static lukasz.p1.kraina1.MainActivity.setDefaults34;
+import static lukasz.p1.kraina1.MainActivity.setDefaults37;
+import static lukasz.p1.kraina1.MainActivity.setDefaults38;
+import static lukasz.p1.kraina1.MainActivity.setDefaults4;
+import static lukasz.p1.kraina1.MainActivity.setDefaults44;
+import static lukasz.p1.kraina1.MainActivity.setDefaults47;
+import static lukasz.p1.kraina1.MainActivity.setDefaults48;
+import static lukasz.p1.kraina1.MainActivity.setDefaults54;
+import static lukasz.p1.kraina1.MainActivity.setDefaults57;
+import static lukasz.p1.kraina1.MainActivity.setDefaults58;
+import static lukasz.p1.kraina1.MainActivity.setDefaults64;
+import static lukasz.p1.kraina1.MainActivity.setDefaults67;
+import static lukasz.p1.kraina1.MainActivity.setDefaults68;
+import static lukasz.p1.kraina1.MainActivity.setDefaults7;
+import static lukasz.p1.kraina1.MainActivity.setDefaults8;
+import static lukasz.p1.kraina1.MainActivity.setsbtn1;
+import static lukasz.p1.kraina1.MainActivity.setsbtn2;
+import static lukasz.p1.kraina1.MainActivityc.idskrzatc;
+import static lukasz.p1.kraina1.MainActivityc.punktyc;
+import static lukasz.p1.kraina1.MainActivityc.setsbtncc1;
+import static lukasz.p1.kraina1.MainActivityc.setsbtncc2;
+import static lukasz.p1.kraina1.MainActivity.s;
+import static lukasz.p1.kraina1.Menu.kon;
+import static lukasz.p1.kraina1.Menu.mp;
 
 public class dobrze3 extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     public void onPause(){

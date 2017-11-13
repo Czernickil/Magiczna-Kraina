@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -12,8 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.p1.kraina1.FlashButtonc.FlashEnum;
-import com.example.p1.kraina1.FlashButton2c.FlashEnum2;
+import lukasz.p1.kraina1.FlashButtonc.FlashEnum;
+import lukasz.p1.kraina1.FlashButton2c.FlashEnum2;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -24,20 +24,20 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 import static com.example.Kraina1.context;
-import static com.example.p1.kraina1.FlashButtonc.FlashEnum.AUTOMATIC;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.OFF;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
-import static com.example.p1.kraina1.FlashButton2c.FlashEnum2.ON2;
-import static com.example.p1.kraina1.MainActivity.punkty;
-import static com.example.p1.kraina1.MainActivity.skrzaty;
-import static com.example.p1.kraina1.Menu.pp;
-import static com.example.p1.kraina1.Menu.setpc;
-import static com.example.p1.kraina1.Menu.setpm;
-import static com.example.p1.kraina1.Menu.setsc;
-import static com.example.p1.kraina1.Menu.setsm;
-import static com.example.p1.kraina1.Menu.zc;
+import static lukasz.p1.kraina1.FlashButtonc.FlashEnum.AUTOMATIC;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.OFF;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.ON;
+import static lukasz.p1.kraina1.FlashButton2c.FlashEnum2.ON2;
+import static lukasz.p1.kraina1.MainActivity.punkty;
+import static lukasz.p1.kraina1.MainActivity.skrzaty;
+import static lukasz.p1.kraina1.Menu.pp;
+import static lukasz.p1.kraina1.Menu.setpc;
+import static lukasz.p1.kraina1.Menu.setpm;
+import static lukasz.p1.kraina1.Menu.setsc;
+import static lukasz.p1.kraina1.Menu.setsm;
+import static lukasz.p1.kraina1.Menu.zc;
 
-import static com.example.p1.kraina1.Menu.kon; public class MainActivityc extends AppCompatActivity {
+import static lukasz.p1.kraina1.Menu.kon; public class MainActivityc extends AppCompatActivity {
     Random generator = new Random();
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
     static SharedPreferences.Editor editor = prefs.edit();

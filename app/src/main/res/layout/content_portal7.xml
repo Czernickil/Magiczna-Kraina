@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.p1.kraina1.portal7"
+    tools:context="lukasz.p1.kraina1.portal7"
     android:background="@drawable/portal7"
     tools:showIn="@layout/activity_portal7">
 

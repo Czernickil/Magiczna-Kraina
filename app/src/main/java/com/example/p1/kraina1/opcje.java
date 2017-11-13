@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ToggleButton;
 
-import static com.example.p1.kraina1.Menu.kon;
-import static com.example.p1.kraina1.Menu.pp;
+import static lukasz.p1.kraina1.Menu.kon;
+import static lukasz.p1.kraina1.Menu.pp;
 
 public class opcje extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
-    com.example.p1.kraina1.FlashButton6 voices;
+    lukasz.p1.kraina1.FlashButton6 voices;
     ToggleButton toggleButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

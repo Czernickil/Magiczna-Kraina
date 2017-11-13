@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.p1.kraina1.matematyka1">
+    tools:context="lukasz.p1.kraina1.matematyka1">
 
     <include layout="@layout/content_matematyka1" />
 

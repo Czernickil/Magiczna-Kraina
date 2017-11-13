@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,26 +15,26 @@ import android.view.View;
 import java.io.IOException;
 import java.util.Random;
 
-import static com.example.p1.kraina1.FlashButton.FlashEnum.AUTOMATIC;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
-import static com.example.p1.kraina1.FlashButton2.FlashEnum2.ON2;
-import static com.example.p1.kraina1.FlashButton3.FlashEnum3.ON3;
-import static com.example.p1.kraina1.FlashButton3.FlashEnum3.ON3m;
-import static com.example.p1.kraina1.FlashButton3.FlashEnum3.ON3p;
-import static com.example.p1.kraina1.FlashButton3.FlashEnum3.ON3z;
-import static com.example.p1.kraina1.MainActivity.punkty;
-import static com.example.p1.kraina1.MainActivity.r;
-import static com.example.p1.kraina1.MainActivity.skrzaty;
-import static com.example.p1.kraina1.MainActivityc.skrzatyc;
-import static com.example.p1.kraina1.MainActivityc.punktyc;
-import static com.example.p1.kraina1.pytlit.setlit;
-import static com.example.p1.kraina1.pytobr.setpyto;
-import static com.example.p1.kraina1.pytreb.setreb;
-import static com.example.p1.kraina1.pytzab.setpytzab;
-import static com.example.p1.kraina1.pytztxt.*;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.AUTOMATIC;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.ON;
+import static lukasz.p1.kraina1.FlashButton2.FlashEnum2.ON2;
+import static lukasz.p1.kraina1.FlashButton3.FlashEnum3.ON3;
+import static lukasz.p1.kraina1.FlashButton3.FlashEnum3.ON3m;
+import static lukasz.p1.kraina1.FlashButton3.FlashEnum3.ON3p;
+import static lukasz.p1.kraina1.FlashButton3.FlashEnum3.ON3z;
+import static lukasz.p1.kraina1.MainActivity.punkty;
+import static lukasz.p1.kraina1.MainActivity.r;
+import static lukasz.p1.kraina1.MainActivity.skrzaty;
+import static lukasz.p1.kraina1.MainActivityc.skrzatyc;
+import static lukasz.p1.kraina1.MainActivityc.punktyc;
+import static lukasz.p1.kraina1.pytlit.setlit;
+import static lukasz.p1.kraina1.pytobr.setpyto;
+import static lukasz.p1.kraina1.pytreb.setreb;
+import static lukasz.p1.kraina1.pytzab.setpytzab;
+import static lukasz.p1.kraina1.pytztxt.*;
 import android.media.MediaPlayer;
 import android.widget.ToggleButton;
-import static com.example.p1.kraina1.FlashButton6.*;
+import static lukasz.p1.kraina1.FlashButton6.*;
 public class Menu extends AppCompatActivity {
     public static int zm=0;
 

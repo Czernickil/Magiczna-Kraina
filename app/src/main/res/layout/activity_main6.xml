@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.p1.kraina1.MainActivity"
+    tools:context="lukasz.p1.kraina1.MainActivity"
     android:background="@drawable/image11"
     tools:layout_editor_absoluteY="0dp"
 
@@ -75,7 +75,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggleButton8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -88,7 +88,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggleButton2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -102,7 +102,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -116,7 +116,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggleButton4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -129,7 +129,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -143,7 +143,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggleButton7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -156,7 +156,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggleButton9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -171,7 +171,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggleButton6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -193,7 +193,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana22"
+            <lukasz.p1.kraina1.FlashButton2 android:onClick="zmiana22"
                 android:id="@+id/toggle2Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -205,7 +205,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana29"
+            <lukasz.p1.kraina1.FlashButton2 android:onClick="zmiana29"
                 android:id="@+id/toggle2Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -219,7 +219,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -233,7 +233,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle2Button4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -246,7 +246,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -260,7 +260,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle3Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -273,7 +273,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle2Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -286,7 +286,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana26"
+            <lukasz.p1.kraina1.FlashButton2 android:onClick="zmiana26"
                 android:id="@+id/toggle2Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -307,7 +307,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana32"
+            <lukasz.p1.kraina1.FlashButton2 android:onClick="zmiana32"
                 android:id="@+id/toggle3Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -319,7 +319,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -333,7 +333,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn10"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -347,7 +347,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle4Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -360,7 +360,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle4Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -375,7 +375,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana39"
+            <lukasz.p1.kraina1.FlashButton2 android:onClick="zmiana39"
                 android:id="@+id/toggle3Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -389,7 +389,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle3Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -402,7 +402,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle5Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -423,7 +423,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn11"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -437,7 +437,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle3Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -450,7 +450,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn12"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -464,7 +464,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle5Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -477,7 +477,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle5Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -492,7 +492,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2 android:onClick="zmiana46"
+            <lukasz.p1.kraina1.FlashButton2 android:onClick="zmiana46"
                 android:id="@+id/toggle4Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -504,7 +504,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle4Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -517,7 +517,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn13"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -540,7 +540,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle2Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -553,7 +553,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn14"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -567,7 +567,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn15"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -581,7 +581,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle3Button4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -594,7 +594,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle5Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -607,7 +607,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn16"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -621,7 +621,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle6Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -636,7 +636,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle6Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -658,7 +658,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle4Button4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -671,7 +671,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn17"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -685,7 +685,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn18"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -699,7 +699,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn19"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -713,7 +713,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn20"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -727,7 +727,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/toggle6Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -740,7 +740,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle4Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -753,7 +753,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/toggle6Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -775,7 +775,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/sbtn1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -788,7 +788,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn21"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -802,7 +802,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn22"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -816,7 +816,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn23"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -830,7 +830,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn26"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -844,7 +844,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn27"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -858,7 +858,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn24"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -873,7 +873,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn25"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -895,7 +895,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/sbtn3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -908,7 +908,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn28"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -922,7 +922,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/sbtn2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -935,7 +935,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/sbtn4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -948,7 +948,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/sbtn5"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -961,7 +961,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn29"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -976,7 +976,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <com.example.p1.kraina1.FlashButton2
+            <lukasz.p1.kraina1.FlashButton2
                 android:id="@+id/btn30"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -989,7 +989,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <com.example.p1.kraina1.FlashButton
+            <lukasz.p1.kraina1.FlashButton
                 android:id="@+id/sbtn6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"

@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import java.util.Random;
 
 import static com.example.Kraina1.context;
-import static com.example.p1.kraina1.MainActivity.r;
+import static lukasz.p1.kraina1.MainActivity.r;
 
 public class pytreb extends AppCompatActivity {
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);

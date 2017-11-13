@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,18 +8,18 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 
-import com.example.p1.kraina1.FlashButton3.FlashEnum3;
+import lukasz.p1.kraina1.FlashButton3.FlashEnum3;
 
 import java.util.Random;
 
-import static com.example.p1.kraina1.FlashButton3.FlashEnum3.OFF3;
-import static com.example.p1.kraina1.FlashButton3.FlashEnum3.ON3;
+import static lukasz.p1.kraina1.FlashButton3.FlashEnum3.OFF3;
+import static lukasz.p1.kraina1.FlashButton3.FlashEnum3.ON3;
 
-import static com.example.p1.kraina1.MainActivity.skrzaty;
-import static com.example.p1.kraina1.MainActivityc.skrzatyc;
-import static com.example.p1.kraina1.Menu.kon;
-import static com.example.p1.kraina1.Menu.setsc;
-import static com.example.p1.kraina1.Menu.setsm;
+import static lukasz.p1.kraina1.MainActivity.skrzaty;
+import static lukasz.p1.kraina1.MainActivityc.skrzatyc;
+import static lukasz.p1.kraina1.Menu.kon;
+import static lukasz.p1.kraina1.Menu.setsc;
+import static lukasz.p1.kraina1.Menu.setsm;
 
 public class pytania2 extends Activity {
     Random generator = new Random();

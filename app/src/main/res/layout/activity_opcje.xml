@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/image69"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.p1.kraina1.opcje"
+    tools:context="lukasz.p1.kraina1.opcje"
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 
@@ -51,7 +51,7 @@
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/voiced"
         tools:layout_constraintLeft_creator="1" />
-    <com.example.p1.kraina1.FlashButton6
+    <lukasz.p1.kraina1.FlashButton6
         android:id="@+id/voiced"
         android:layout_width="165dp"
         android:layout_height="129dp"

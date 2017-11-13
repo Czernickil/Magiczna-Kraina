@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -20,7 +20,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 
 import static com.example.Kraina1.context;
-import static com.example.p1.kraina1.Menu.kon; public class pytztxt extends AppCompatActivity {
+import static lukasz.p1.kraina1.Menu.kon; public class pytztxt extends AppCompatActivity {
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
     static SharedPreferences.Editor editor = prefs.edit();
     public void onStart(){         super.onStart(); Menu.wyl=0;}

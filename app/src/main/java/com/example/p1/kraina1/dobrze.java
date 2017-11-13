@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,14 +16,14 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import java.util.Random;
-import static com.example.p1.kraina1.MainActivity.s;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.OFF;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
-import static com.example.p1.kraina1.MainActivity.punkty;
-import static com.example.p1.kraina1.MainActivity.*;
-import static com.example.p1.kraina1.MainActivityc.*;
-import static com.example.p1.kraina1.Menu.kon;
-import static com.example.p1.kraina1.Menu.mp;
+import static lukasz.p1.kraina1.MainActivity.s;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.OFF;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.ON;
+import static lukasz.p1.kraina1.MainActivity.punkty;
+import static lukasz.p1.kraina1.MainActivity.*;
+import static lukasz.p1.kraina1.MainActivityc.*;
+import static lukasz.p1.kraina1.Menu.kon;
+import static lukasz.p1.kraina1.Menu.mp;
 
 public class dobrze extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
 

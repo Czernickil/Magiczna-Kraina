@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.Objects;
 import java.util.Random;
 
-import static com.example.p1.kraina1.Menu.kon; public class zycie1 extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
+import static lukasz.p1.kraina1.Menu.kon; public class zycie1 extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     TextView odp1;
     TextView odp2;
     TextView odp3;

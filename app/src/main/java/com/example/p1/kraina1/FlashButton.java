@@ -1,11 +1,11 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 
-import static com.example.p1.kraina1.MainActivity.skrzaty;
-import static com.example.p1.kraina1.Menu.kon; public class FlashButton extends android.support.v7.widget.AppCompatImageButton {
+import static lukasz.p1.kraina1.MainActivity.skrzaty;
+import static lukasz.p1.kraina1.Menu.kon; public class FlashButton extends android.support.v7.widget.AppCompatImageButton {
 
 
 

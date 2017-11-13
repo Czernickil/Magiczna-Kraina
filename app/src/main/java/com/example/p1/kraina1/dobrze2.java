@@ -1,4 +1,4 @@
-package com.example.p1.kraina1;
+package lukasz.p1.kraina1;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,22 +14,22 @@ import android.widget.VideoView;
 
 import java.util.Random;
 
-import static com.example.p1.kraina1.FlashButton.FlashEnum.OFF;
-import static com.example.p1.kraina1.FlashButton.FlashEnum.ON;
-import static com.example.p1.kraina1.MainActivity.idskrzat;
-import static com.example.p1.kraina1.MainActivity.punkty;
-import static com.example.p1.kraina1.MainActivity.setDefaults24;
-import static com.example.p1.kraina1.MainActivity.setDefaults4;
-import static com.example.p1.kraina1.MainActivity.setDefaults7;
-import static com.example.p1.kraina1.MainActivity.setDefaults8;
-import static com.example.p1.kraina1.MainActivity.setsbtn1;
-import static com.example.p1.kraina1.MainActivityc.idskrzatc;
-import static com.example.p1.kraina1.MainActivityc.punktyc;
-import static com.example.p1.kraina1.MainActivityc.setsbtncc1;
-import static com.example.p1.kraina1.MainActivityc.setsbtncc2;
-import static com.example.p1.kraina1.MainActivity.*;
-import static com.example.p1.kraina1.Menu.kon;
-import static com.example.p1.kraina1.Menu.mp;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.OFF;
+import static lukasz.p1.kraina1.FlashButton.FlashEnum.ON;
+import static lukasz.p1.kraina1.MainActivity.idskrzat;
+import static lukasz.p1.kraina1.MainActivity.punkty;
+import static lukasz.p1.kraina1.MainActivity.setDefaults24;
+import static lukasz.p1.kraina1.MainActivity.setDefaults4;
+import static lukasz.p1.kraina1.MainActivity.setDefaults7;
+import static lukasz.p1.kraina1.MainActivity.setDefaults8;
+import static lukasz.p1.kraina1.MainActivity.setsbtn1;
+import static lukasz.p1.kraina1.MainActivityc.idskrzatc;
+import static lukasz.p1.kraina1.MainActivityc.punktyc;
+import static lukasz.p1.kraina1.MainActivityc.setsbtncc1;
+import static lukasz.p1.kraina1.MainActivityc.setsbtncc2;
+import static lukasz.p1.kraina1.MainActivity.*;
+import static lukasz.p1.kraina1.Menu.kon;
+import static lukasz.p1.kraina1.Menu.mp;
 
 public class dobrze2 extends AppCompatActivity {    public void onStart(){         super.onStart(); Menu.wyl=0;}
     public void onPause(){

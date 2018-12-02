@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lukasz.p1.kraina1.MainActivityc"
+    android:background="@drawable/image11"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="122dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:textAlignment="center"
+                    android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/editText7"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="93dp"
+        android:allowUndo="false"
+        android:autoText="false"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Wynik M:C"
+        android:textAlignment="center"
+                    android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="103dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglecButton8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat8"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglecButton2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana12"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab1"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab2"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglecButton4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat4"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglecButton9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmiana19"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglecButton6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana16"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglecButton7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat7"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec2Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat28"
+                android:text="togglec2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab7"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec2Button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat24"
+                android:text="togglec2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab8"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec2Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat27"
+                android:text="togglec2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec3Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat38"
+                android:text="togglec3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec2Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana22"
+                android:text="togglec2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec3Button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat34"
+                android:text="togglec3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec3Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat37"
+                android:text="togglec3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec2Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmiana29"
+                android:text="togglec2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana36"
+                android:id="@+id/togglec3Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="togglec3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec2Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana26"
+                android:text="togglec2Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana32"
+                android:id="@+id/togglec3Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="togglec3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab9"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab10"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana39"
+                android:id="@+id/togglec3Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:text="togglec3Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec4Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat47"
+                android:text="togglec4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana42"
+                android:id="@+id/togglec4Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="togglec4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec5Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana52"
+                android:text="togglec5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana49"
+                android:id="@+id/togglec4Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:text="togglec4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab11"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab12"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana46"
+                android:id="@+id/togglec4Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="togglec4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec4Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat48"
+                android:text="togglec4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana59"
+                android:id="@+id/togglec5Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:text="togglec5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab13"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab14"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec4Button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat44"
+                android:text="togglec4Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec5Button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat57"
+                android:text="togglec5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/togglec6Button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat68"
+                android:text="togglec6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana56"
+                android:id="@+id/togglec5Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:text="togglec5Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab15"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec6Button9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmiana69"
+                android:text="togglec6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab16"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec6Button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana66"
+                android:text="togglec6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab17"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab18"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc19"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab19"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc20"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab20"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/togglec6Button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmiana62"
+                android:text="togglec6Button"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/sbtnc1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzatbtncc1"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab21"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab22"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab23"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmianab24"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/sbtnc2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzatbtncc2"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc25"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab25"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/sbtnc3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat67"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="106dp">
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/sbtnc4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat64"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc26"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab26"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc27"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab27"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/sbtnc5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+
+                android:onClick="skrzat58"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc28"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab28"
+                android:saveEnabled="false"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc29"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:cropToPadding="false"
+                android:onClick="zmianab29"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="313dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <lukasz.p1.kraina1.FlashButton2c
+                android:id="@+id/btnc30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pudlo"
+                android:checked="true"
+                android:onClick="zmianab30"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <lukasz.p1.kraina1.FlashButtonc
+                android:id="@+id/sbtnc6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pudlo"
+                android:onClick="skrzat54"
+                android:text="TogglecButton"
+                android:textOff=""
+                android:textOn=""
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Drużyna Czarnoksiężnika"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.538" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:text="Skrzatów pozostało:"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        android:layout_marginBottom="23dp"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"  android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintTop_toTopOf="@+id/editText7" />
+
+
+</android.support.constraint.ConstraintLayout>

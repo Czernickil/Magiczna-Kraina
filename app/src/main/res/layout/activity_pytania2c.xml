@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image69"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Kliknij na prezent aby wybrać pytanie z odpowiedniej kategorii:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/image7"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="1dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="114dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <TextView
+            android:id="@+id/editText6"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Za 1 pkt"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <TextView
+            android:id="@+id/editText8"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Za 2 pkt"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Za 3 pkt"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/tableLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button1"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:onClick="polski1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button2"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polski12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button3"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polski2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button4"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polski22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button5"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polski3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button6"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polski32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Polski"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="283dp"
+                tools:layout_editor_absoluteY="194dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb1"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polskia1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb2"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polskia12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb3"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polskia2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb4"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polskia22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb5"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polskia3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb6"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="polskia32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button7"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematyka1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button8"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematyka12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button9"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematyka2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button10"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematyka22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button11"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematyka3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button12"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematyka32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="125dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Matematyka"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="283dp"
+                tools:layout_editor_absoluteY="238dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb7"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematykaa1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb8"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematykaa12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb9"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematykaa2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb10"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematykaa22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb11"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematykaa3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb12"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="matematykaa32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button13"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyroda1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button14"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyroda12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button15"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyroda2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button16"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyroda22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button17"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyroda3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button18"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyroda32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <TextView
+                android:id="@+id/editText9"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Przyroda"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="283dp"
+                tools:layout_editor_absoluteY="282dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb13"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyrodaa1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb14"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyrodaa12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb15"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyrodaa2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb16"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyrodaa22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb17"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyrodaa3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb18"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="przyrodaa32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button19"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zycie1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button20"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zycie12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button21"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zycie2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button22"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zycie22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button23"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zycie3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/button24"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zycie32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="140dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Życie"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="283dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb19"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zyciea1"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb20"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zyciea12"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb21"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zyciea2"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb22"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zyciea22"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb23"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zyciea3"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <lukasz.p1.kraina1.FlashButton3
+                android:id="@+id/buttonb24"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+
+                android:onClick="zyciea32"
+                android:textOff="W"
+                android:textOn="O"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="140dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Codzienne"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="283dp"
+                tools:layout_editor_absoluteY="333dp" />
+
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

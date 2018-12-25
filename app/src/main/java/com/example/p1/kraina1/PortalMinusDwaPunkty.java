@@ -6,7 +6,7 @@ import android.app.Activity;
 import android.view.View;
 
 import static com.example.p1.kraina1.GlownyWidokMaga.punktyMaga;
-import static com.example.p1.kraina1.GlownyWidokMaga.r;
+import static com.example.p1.kraina1.GlownyWidokMaga.czyTuraMaga;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.punktyCzarnoksieznika;
 
 public class PortalMinusDwaPunkty extends Activity {    public void onStart(){         super.onStart(); Menu.poprawneWylaczenie =0;}
@@ -26,7 +26,7 @@ public class PortalMinusDwaPunkty extends Activity {    public void onStart(){  
         }
     public void powrot(View view) {
 
-        if (r == 1) {
+        if (czyTuraMaga == 1) {
             punktyMaga = punktyMaga -2;
             Intent intent = new Intent(PortalMinusDwaPunkty.this, GlownyWidokCzarnoksieznika.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);

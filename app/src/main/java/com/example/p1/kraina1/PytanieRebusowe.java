@@ -14,7 +14,7 @@ import java.util.Random;
 
 
 import static com.example.Kraina1.context;
-import static com.example.p1.kraina1.GlownyWidokMaga.r;
+import static com.example.p1.kraina1.GlownyWidokMaga.czyTuraMaga;
 
 public class PytanieRebusowe extends Activity {
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -177,7 +177,7 @@ public class PytanieRebusowe extends Activity {
     public void sprawdz(View view) {
         tekst =odp.getText().toString();
 
-        if (r == 1) {
+        if (czyTuraMaga == 1) {
         if(tekst.equals(poprawne[i][0]) || tekst.equals(poprawne[i][1]) || tekst.equals(poprawne[i][2])
                 || tekst.equals(poprawne[i][3]) ){
         Intent intent = new Intent(PytanieRebusowe.this, DobrzeMagDwaPunkty.class);
@@ -187,7 +187,7 @@ public class PytanieRebusowe extends Activity {
         {
             Intent intent = new Intent(PytanieRebusowe.this, ZlaOdpowiedzMaga.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);}}
-        if (r == 0) {
+        if (czyTuraMaga == 0) {
             if(tekst.equals(poprawne[i][0]) || tekst.equals(poprawne[i][1]) || tekst.equals(poprawne[i][2])
                     || tekst.equals(poprawne[i][3]) ){
                 Intent intent = new Intent(PytanieRebusowe.this, DobrzeCzernoksieznikDwaPunkty.class);

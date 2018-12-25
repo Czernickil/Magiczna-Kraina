@@ -54,9 +54,9 @@ public class PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika extends android.support
         int next = ((mState.ordinal() + 1) % FlashEnum.values().length);
         if (getState()== FlashEnum.AUTOMATIC){
             skrzatyCzarnoksieznika++;
-            if(GlownyWidokCzarnoksieznika.s==1)
+            if(GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika ==1)
         setState(FlashEnum.ON);
-            if(GlownyWidokCzarnoksieznika.s==0)
+            if(GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika ==0)
                 setState(FlashEnum.OFF);
         performFlashClick();
         return true;}

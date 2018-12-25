@@ -16,7 +16,7 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.punktyCzarnoksieznika;
-import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.s;
+import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc24;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc27;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc28;
@@ -70,8 +70,8 @@ public class DobrzeCzernoksieznikTrzyPunkty extends Activity {
         if (Intro.poprawneWylaczenieDwa == 1) mpb.start();
         textviev = (TextView) findViewById(R.id.textView3);
         if (idskrzat == "skrzatbtn1" || idskrzat == "skrzatbtn2" || idskrzatc == "skrzatcbtnc1" || idskrzatc == "skrzatcbtnc2")
-            s = 0;
-        if (s == 1) {
+            czyTuraCzarnoksieznika = 0;
+        if (czyTuraCzarnoksieznika == 1) {
             textviev.setText("");
             punktyCzarnoksieznika = punktyCzarnoksieznika + 3;
             GifSkrzatBezZmianyCzarnoksieznik gifView = (GifSkrzatBezZmianyCzarnoksieznik) findViewById(R.id.gifz);

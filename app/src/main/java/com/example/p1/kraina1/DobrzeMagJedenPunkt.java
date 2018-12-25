@@ -17,7 +17,7 @@ import java.util.Random;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
 import static com.example.p1.kraina1.GlownyWidokMaga.idskrzat;
 import static com.example.p1.kraina1.GlownyWidokMaga.punktyMaga;
-import static com.example.p1.kraina1.GlownyWidokMaga.s;
+import static com.example.p1.kraina1.GlownyWidokMaga.losowanieDodatkowegoPunktu;
 import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults24;
 import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults27;
 import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults28;
@@ -58,8 +58,8 @@ public class DobrzeMagJedenPunkt extends Activity {
         TextView textviev;
         textviev = (TextView) findViewById(R.id.textView3);
         if (idskrzat == "skrzatbtn1" || idskrzat == "skrzatbtn2" || idskrzatc == "skrzatcbtnc1" || idskrzatc == "skrzatcbtnc2")
-            s = 0;
-        if (s == 1) {
+            losowanieDodatkowegoPunktu = 0;
+        if (losowanieDodatkowegoPunktu == 1) {
             punktyMaga = punktyMaga + 3;
             textviev.setText("");
             GifSkrzatBezZmianyMag gifSkrzatBezZmianyMag = (GifSkrzatBezZmianyMag) findViewById(R.id.gif);

@@ -16,7 +16,7 @@ import java.util.Random;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.punktyCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.skrzatyCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokMaga.punktyMaga;
-import static com.example.p1.kraina1.GlownyWidokMaga.r;
+import static com.example.p1.kraina1.GlownyWidokMaga.czyTuraMaga;
 import static com.example.p1.kraina1.GlownyWidokMaga.skrzatyMaga;
 import static com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaMaga.FlashEnum2.ON2;
 import static com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaMaga.FlashEnum.AUTOMATIC;
@@ -471,12 +471,12 @@ public class Menu extends Activity {
         GlownyWidokCzarnoksieznika.setbtnc28("btnc28", ON2, this);
         GlownyWidokCzarnoksieznika.setbtnc29("btnc29", ON2, this);
         GlownyWidokCzarnoksieznika.setbtnc30("btnc30", ON2, this);
-        GlownyWidokCzarnoksieznika.sbc1 = 0;
-        GlownyWidokCzarnoksieznika.sbc2 = 0;
-        GlownyWidokMaga.sb1 = 0;
-        GlownyWidokMaga.sb2 = 0;
-        GlownyWidokCzarnoksieznika.gc = 1;
-        GlownyWidokMaga.gm = 1;
+        GlownyWidokCzarnoksieznika.dummmy1 = 0;
+        GlownyWidokCzarnoksieznika.dummy2 = 0;
+        GlownyWidokMaga.dummy1 = 0;
+        GlownyWidokMaga.dummy2 = 0;
+        GlownyWidokCzarnoksieznika.dummy3 = 1;
+        GlownyWidokMaga.dummy3 = 1;
         Intent intent = new Intent(Menu.this, GlownyWidokMaga.class);
         Menu.poprawneWylaczenie = 1;
         startActivity(intent);
@@ -569,7 +569,7 @@ public class Menu extends Activity {
             if (PytanieTesktowe.getzaj(i + "lit").equals("Z"))
                 PytanieLiterkowe.poprawne[i][5] = PytanieTesktowe.getzaj(i + "lit");
         }
-        if (r == 1) {
+        if (czyTuraMaga == 1) {
             Intent intent = new Intent(Menu.this, GlownyWidokMaga.class);
             Menu.poprawneWylaczenie = 1;
             startActivity(intent);
@@ -864,12 +864,12 @@ public class Menu extends Activity {
          GlownyWidokCzarnoksieznika.setbtnc28("btnc28", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc29("btnc29", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc30("btnc30", ON2, this);
-         GlownyWidokCzarnoksieznika.sbc1=0;
-         GlownyWidokCzarnoksieznika.sbc2=0;
-         GlownyWidokMaga.sb1=0;
-         GlownyWidokMaga.sb2=0;
-         GlownyWidokCzarnoksieznika.gc=1;
-         GlownyWidokMaga.gm=1;
+         GlownyWidokCzarnoksieznika.dummmy1 =0;
+         GlownyWidokCzarnoksieznika.dummy2 =0;
+         GlownyWidokMaga.dummy1 =0;
+         GlownyWidokMaga.dummy2 =0;
+         GlownyWidokCzarnoksieznika.dummy3 =1;
+         GlownyWidokMaga.dummy3 =1;
          Intent intent = new Intent(Menu.this, WyborPortalu.class);
          Menu.poprawneWylaczenie=1; startActivity(intent);
 
@@ -1132,12 +1132,12 @@ public class Menu extends Activity {
          GlownyWidokCzarnoksieznika.setbtnc28("btnc28", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc29("btnc29", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc30("btnc30", ON2, this);
-         GlownyWidokCzarnoksieznika.sbc1=0;
-         GlownyWidokCzarnoksieznika.sbc2=0;
-         GlownyWidokMaga.sb1=0;
-         GlownyWidokMaga.sb2=0;
-         GlownyWidokCzarnoksieznika.gc=1;
-         GlownyWidokMaga.gm=1;
+         GlownyWidokCzarnoksieznika.dummmy1 =0;
+         GlownyWidokCzarnoksieznika.dummy2 =0;
+         GlownyWidokMaga.dummy1 =0;
+         GlownyWidokMaga.dummy2 =0;
+         GlownyWidokCzarnoksieznika.dummy3 =1;
+         GlownyWidokMaga.dummy3 =1;
          Intent intent = new Intent(Menu.this, PytanieRebusowe.class);
          Menu.poprawneWylaczenie=1; startActivity(intent);
 
@@ -1400,12 +1400,12 @@ public class Menu extends Activity {
          GlownyWidokCzarnoksieznika.setbtnc28("btnc28", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc29("btnc29", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc30("btnc30", ON2, this);
-         GlownyWidokCzarnoksieznika.sbc1=0;
-         GlownyWidokCzarnoksieznika.sbc2=0;
-         GlownyWidokMaga.sb1=0;
-         GlownyWidokMaga.sb2=0;
-         GlownyWidokCzarnoksieznika.gc=1;
-         GlownyWidokMaga.gm=1;
+         GlownyWidokCzarnoksieznika.dummmy1 =0;
+         GlownyWidokCzarnoksieznika.dummy2 =0;
+         GlownyWidokMaga.dummy1 =0;
+         GlownyWidokMaga.dummy2 =0;
+         GlownyWidokCzarnoksieznika.dummy3 =1;
+         GlownyWidokMaga.dummy3 =1;
          Intent intent = new Intent(Menu.this, PytanieObrazkowe.class);
          Menu.poprawneWylaczenie=1; startActivity(intent);
 
@@ -1668,12 +1668,12 @@ public class Menu extends Activity {
          GlownyWidokCzarnoksieznika.setbtnc28("btnc28", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc29("btnc29", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc30("btnc30", ON2, this);
-         GlownyWidokCzarnoksieznika.sbc1=0;
-         GlownyWidokCzarnoksieznika.sbc2=0;
-         GlownyWidokMaga.sb1=0;
-         GlownyWidokMaga.sb2=0;
-         GlownyWidokCzarnoksieznika.gc=1;
-         GlownyWidokMaga.gm=1;
+         GlownyWidokCzarnoksieznika.dummmy1 =0;
+         GlownyWidokCzarnoksieznika.dummy2 =0;
+         GlownyWidokMaga.dummy1 =0;
+         GlownyWidokMaga.dummy2 =0;
+         GlownyWidokCzarnoksieznika.dummy3 =1;
+         GlownyWidokMaga.dummy3 =1;
          Intent intent = new Intent(Menu.this, PytanieZabawne.class);
          Menu.poprawneWylaczenie=1; startActivity(intent);
 
@@ -1936,12 +1936,12 @@ public class Menu extends Activity {
          GlownyWidokCzarnoksieznika.setbtnc28("btnc28", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc29("btnc29", ON2, this);
          GlownyWidokCzarnoksieznika.setbtnc30("btnc30", ON2, this);
-         GlownyWidokCzarnoksieznika.sbc1=0;
-         GlownyWidokCzarnoksieznika.sbc2=0;
-         GlownyWidokMaga.sb1=0;
-         GlownyWidokMaga.sb2=0;
-         GlownyWidokCzarnoksieznika.gc=1;
-         GlownyWidokMaga.gm=1;
+         GlownyWidokCzarnoksieznika.dummmy1 =0;
+         GlownyWidokCzarnoksieznika.dummy2 =0;
+         GlownyWidokMaga.dummy1 =0;
+         GlownyWidokMaga.dummy2 =0;
+         GlownyWidokCzarnoksieznika.dummy3 =1;
+         GlownyWidokMaga.dummy3 =1;
          Intent intent = new Intent(Menu.this, PytanieLiterkowe.class);
          Menu.poprawneWylaczenie=1; startActivity(intent);
 

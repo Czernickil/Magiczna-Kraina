@@ -33,12 +33,12 @@ public class GlownyWidokCzarnoksieznika extends Activity {
     Random generator = new Random();
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
     static SharedPreferences.Editor editor = prefs.edit();
-    public static int sbc1=0;
-    public static int sbc2=0;
+    public static int dummmy1 =0;
+    public static int dummy2 =0;
     public static int punktyCzarnoksieznika;
-    public static int gc;
+    public static int dummy3;
     public static int skrzatyCzarnoksieznika;
-    public static int s;
+    public static int czyTuraCzarnoksieznika;
     public static String idskrzatc="";
     PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika togglec2;
     PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika togglec4;
@@ -125,7 +125,7 @@ public class GlownyWidokCzarnoksieznika extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainc);
-        GlownyWidokMaga.r=0;
+        GlownyWidokMaga.czyTuraMaga =0;
 
         switch(numerMapyCzarnoksieznika){
             case 1:
@@ -276,7 +276,7 @@ public class GlownyWidokCzarnoksieznika extends Activity {
     public void onStart(){
         super.onStart(); Menu.poprawneWylaczenie =0;
 // 1
-        s=generator.nextInt(2);
+        czyTuraCzarnoksieznika =generator.nextInt(2);
         if(stanPopupow !=0){
         AlertDialog.Builder builder;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -301,7 +301,7 @@ public class GlownyWidokCzarnoksieznika extends Activity {
         setpc("d", punktyCzarnoksieznika, this);
         setsm("bbbbm", skrzatyMaga, this);
         setsc("bbbbc", skrzatyCzarnoksieznika, this);
-        GlownyWidokMaga.r=0;
+        GlownyWidokMaga.czyTuraMaga =0;
 
         if(skrzatyCzarnoksieznika ==20){
             Intent intent = new Intent(GlownyWidokCzarnoksieznika.this, KoniecCzarnoksieznikOdkrylSkrzaty.class);
@@ -1590,7 +1590,7 @@ public class GlownyWidokCzarnoksieznika extends Activity {
     public void skrzatbtncc1(View view) {
         if(AUTOMATIC == sbtncc1.getState()){
             idskrzatc="skrzatcbtnc1";
-            sbc1=1;
+            dummmy1 =1;
              punktyCzarnoksieznika++;  Intent intent = new Intent(GlownyWidokCzarnoksieznika.this, WyborPytaniaCzarnoksieznik.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);}
 
@@ -1598,7 +1598,7 @@ public class GlownyWidokCzarnoksieznika extends Activity {
     public void skrzatbtncc2(View view) {
         if(AUTOMATIC == sbtncc2.getState()){
             idskrzatc="skrzatcbtnc2";
-            sbc2=1;
+            dummy2 =1;
              punktyCzarnoksieznika++;  Intent intent = new Intent(GlownyWidokCzarnoksieznika.this, WyborPytaniaCzarnoksieznik.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);}
 

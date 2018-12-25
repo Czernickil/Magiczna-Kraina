@@ -37,11 +37,11 @@ public class GlownyWidokMaga extends Activity {
     Random generator = new Random();
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
     static SharedPreferences.Editor editor = prefs.edit();
-    public static int sb1=0;
-    public static int sb2=0;
-    public static int r;
-    public static int s;
-    public static int gm;
+    public static int dummy1 =0;
+    public static int dummy2 =0;
+    public static int czyTuraMaga;
+    public static int losowanieDodatkowegoPunktu;
+    public static int dummy3;
     PrzyciskDrzewkaBezSkrzataDlaMaga btn1;
     PrzyciskDrzewkaBezSkrzataDlaMaga btn2;
     PrzyciskDrzewkaBezSkrzataDlaMaga btn7;
@@ -130,7 +130,7 @@ public class GlownyWidokMaga extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        r=1;
+        czyTuraMaga =1;
 
 
         switch(numerMapyMaga){
@@ -304,7 +304,7 @@ public class GlownyWidokMaga extends Activity {
         setpc("d", punktyCzarnoksieznika, this);
         setsm("bbbbm", skrzatyMaga, this);
         setsc("bbbbc", skrzatyCzarnoksieznika, this);
-        r=1;
+        czyTuraMaga =1;
         if(skrzatyMaga ==20){
             Intent intent = new Intent(GlownyWidokMaga.this, KoniecMagOdkrylSkrzaty.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);
@@ -380,7 +380,7 @@ public class GlownyWidokMaga extends Activity {
         btn29.setState(getbtn29("btn29",this));
         btn30.setState(getbtn30("btn30",this));
   //      punktyMaga=getDefaultsp("etatTogglep",this);
-        s=generator.nextInt(2);
+        losowanieDodatkowegoPunktu =generator.nextInt(2);
     }
 
 
@@ -1707,7 +1707,7 @@ public class GlownyWidokMaga extends Activity {
     public void skrzatbtn1(View view) {
         if(AUTOMATIC == sbtn1.getState()){
             idskrzat="skrzatbtn1";
-            sb1=1;
+            dummy1 =1;
              punktyMaga++;  Intent intent = new Intent(GlownyWidokMaga.this, WyborPytaniaMag.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);}
 
@@ -1715,7 +1715,7 @@ public class GlownyWidokMaga extends Activity {
     public void skrzatbtn2(View view) {
         if(AUTOMATIC == sbtn2.getState()){
             idskrzat="skrzatbtn2";
-            sb2=1;
+            dummy2 =1;
              punktyMaga++;   Intent intent = new Intent(GlownyWidokMaga.this, WyborPytaniaMag.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);}
 

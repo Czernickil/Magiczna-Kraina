@@ -8,7 +8,7 @@ import android.view.View;
 
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.punktyCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokMaga.punktyMaga;
-import static com.example.p1.kraina1.GlownyWidokMaga.r;
+import static com.example.p1.kraina1.GlownyWidokMaga.czyTuraMaga;
 
 public class PortalPlusTrzyPunkty extends Activity {    public void onStart(){         super.onStart(); Menu.poprawneWylaczenie =0;}
     GifyPortalowe po;
@@ -45,7 +45,7 @@ public class PortalPlusTrzyPunkty extends Activity {    public void onStart(){  
         }
     public void powrot(View view) {
 
-        if (r == 1) {
+        if (czyTuraMaga == 1) {
             punktyMaga = punktyMaga +3;
             Intent intent = new Intent(PortalPlusTrzyPunkty.this, GlownyWidokCzarnoksieznika.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);

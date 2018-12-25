@@ -53,9 +53,9 @@ public class PrzyciskDrzewkaZeSkrzatemDlaMaga extends android.support.v7.widget.
         int next = ((mState.ordinal() + 1) % FlashEnum.values().length);
         if (getState() == FlashEnum.AUTOMATIC) {
             skrzatyMaga++;
-            if (GlownyWidokMaga.s == 1)
+            if (GlownyWidokMaga.losowanieDodatkowegoPunktu == 1)
                 setState(FlashEnum.ON);
-            if (GlownyWidokMaga.s == 0)
+            if (GlownyWidokMaga.losowanieDodatkowegoPunktu == 0)
                 setState(FlashEnum.OFF);
             performFlashClick();
             return true;

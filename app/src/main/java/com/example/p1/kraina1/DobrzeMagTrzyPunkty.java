@@ -36,7 +36,7 @@ import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults8;
 import static com.example.p1.kraina1.GlownyWidokMaga.setsbtn1;
 import static com.example.p1.kraina1.GlownyWidokMaga.setsbtn2;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
-import static com.example.p1.kraina1.GlownyWidokMaga.s;
+import static com.example.p1.kraina1.GlownyWidokMaga.losowanieDodatkowegoPunktu;
 
 public class DobrzeMagTrzyPunkty extends Activity {
     public void onStart() {
@@ -67,8 +67,8 @@ public class DobrzeMagTrzyPunkty extends Activity {
         TextView textviev;
         textviev = (TextView) findViewById(R.id.textView3);
         if (idskrzat == "skrzatbtn1" || idskrzat == "skrzatbtn2" || idskrzatc == "skrzatcbtnc1" || idskrzatc == "skrzatcbtnc2")
-            s = 0;
-        if (s == 1) {
+            losowanieDodatkowegoPunktu = 0;
+        if (losowanieDodatkowegoPunktu == 1) {
             punktyMaga = punktyMaga + 3;
             textviev.setText("");
             GifSkrzatBezZmianyMag gifSkrzatBezZmianyMag = (GifSkrzatBezZmianyMag) findViewById(R.id.gif);

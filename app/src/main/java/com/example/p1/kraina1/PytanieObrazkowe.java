@@ -14,7 +14,7 @@ import java.util.Random;
 
 
 import static com.example.Kraina1.context;
-import static com.example.p1.kraina1.GlownyWidokMaga.r;
+import static com.example.p1.kraina1.GlownyWidokMaga.czyTuraMaga;
 
 public class PytanieObrazkowe extends Activity {
     static SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -189,18 +189,18 @@ TextView pyt;
         finish();
     }
     public void dobra2(View view) {
-        if (r == 1) {
+        if (czyTuraMaga == 1) {
         Intent intent = new Intent(PytanieObrazkowe.this, DobrzeMagDwaPunkty.class);
         Menu.poprawneWylaczenie =1; startActivity(intent);}
-        if (r == 0) {        Intent intent = new Intent(PytanieObrazkowe.this, DobrzeCzernoksieznikDwaPunkty.class);
+        if (czyTuraMaga == 0) {        Intent intent = new Intent(PytanieObrazkowe.this, DobrzeCzernoksieznikDwaPunkty.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);}
     }
     public void zla(View view) {
-        if (r == 1) {
+        if (czyTuraMaga == 1) {
             Intent intent = new Intent(PytanieObrazkowe.this, com.example.p1.kraina1.ZlaOdpowiedzMaga.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);
         }
-        if (r == 0) {
+        if (czyTuraMaga == 0) {
             Intent intent = new Intent(PytanieObrazkowe.this, com.example.p1.kraina1.ZlaOdpowiedzCzarnoksieznika.class);
             Menu.poprawneWylaczenie =1; startActivity(intent);
         }

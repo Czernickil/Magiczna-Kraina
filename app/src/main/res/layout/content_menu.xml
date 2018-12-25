@@ -125,7 +125,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button30"
         app:layout_constraintVertical_bias="0.0" />
 
-    <--Button
+    <!-- Button
         android:id="@+id/button35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button30"
         android:layout_marginStart="267dp" />
 
-    <--Button
+    <Button
         android:id="@+id/button39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button30"
         android:layout_marginStart="16dp" />
 
-    <--Button
+    <Button
         android:id="@+id/button38"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
         android:layout_marginStart="265dp"
         android:layout_marginBottom="2dp" />
 
-    <--Button
+    <Button
         android:id="@+id/button37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
         android:layout_marginStart="150dp"
         android:layout_marginBottom="2dp" />
 
-    <--Button
+    <Button
         android:id="@+id/button36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/button39"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="2dp" />
+        android:layout_marginBottom="2dp" -->
 
 
 </android.support.constraint.ConstraintLayout>

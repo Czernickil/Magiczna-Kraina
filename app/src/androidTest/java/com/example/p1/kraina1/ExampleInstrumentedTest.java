@@ -1,4 +1,4 @@
-package lukasz.p1.kraina1;
+package com.example.p1.kraina1;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -20,6 +20,6 @@ import static org.junit.Assert.*;
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("lukasz.p1.kraina1", appContext.getPackageName());
+        assertEquals("com.example.p1.kraina1", appContext.getPackageName());
     }
 }

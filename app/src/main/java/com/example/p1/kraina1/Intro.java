@@ -1,31 +1,28 @@
-package lukasz.p1.kraina1;
+package com.example.p1.kraina1;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 
 
-public class Intro extends AppCompatActivity {
+public class Intro extends Activity {
     public void onStart() {
         super.onStart();
-        Menu.wyl = 0;
+        Menu.poprawneWylaczenie = 0;
     }
 
-    public static int v;
-    public static int z = 1;
+    public static int poprawneWylaczenieTrzy;
+    public static int poprawneWylaczenieDwa = 1;
     public static AudioPlayer adp = new AudioPlayer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-        if (Menu.wyl == 1) {
-            v = 1;
+        if (Menu.poprawneWylaczenie == 1) {
+            poprawneWylaczenieTrzy = 1;
         }
     }
 
@@ -33,14 +30,14 @@ public class Intro extends AppCompatActivity {
         adp.run();
         adp.go();
         Intent intent = new Intent(Intro.this, Menu.class);
-        Menu.wyl = 1;
+        Menu.poprawneWylaczenie = 1;
         startActivity(intent);
     }
 
     public void onPause() {
         super.onPause();
-        if (Menu.wyl == 0) {
-            Intro.z = 0;
+        if (Menu.poprawneWylaczenie == 0) {
+            Intro.poprawneWylaczenieDwa = 0;
             Intro.adp.run();
         }
     }

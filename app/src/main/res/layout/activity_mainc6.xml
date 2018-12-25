@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="lukasz.p1.kraina1.MainActivityc"
+    tools:context="com.example.p1.kraina1.GlownyWidokCzarnoksieznika"
     android:background="@drawable/image11"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
@@ -75,7 +75,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglecButton4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -88,7 +88,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglec6Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -103,7 +103,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglecButton2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -117,7 +117,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -131,7 +131,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -145,7 +145,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglecButton9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -160,7 +160,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglecButton6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -173,7 +173,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglecButton7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -195,7 +195,8 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana22"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana22"
                 android:id="@+id/togglec2Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -207,7 +208,8 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana29"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana29"
                 android:id="@+id/togglec2Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -221,7 +223,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglec6Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -234,7 +236,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -248,7 +250,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc19"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -262,7 +264,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec2Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -275,7 +277,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -289,7 +291,8 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana26"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana26"
                 android:id="@+id/togglec2Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -310,7 +313,8 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana36"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana36"
                 android:id="@+id/togglec3Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -322,7 +326,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec3Button4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -335,7 +339,8 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana32"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana32"
                 android:id="@+id/togglec3Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -347,7 +352,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec3Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -360,7 +365,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -374,7 +379,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec3Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -387,7 +392,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc10"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -401,7 +406,8 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana39"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana39"
                 android:id="@+id/togglec3Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -423,7 +429,8 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana42"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana42"
                 android:id="@+id/togglec4Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -435,7 +442,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec4Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -448,7 +455,8 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana49"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana49"
                 android:id="@+id/togglec4Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -462,7 +470,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec4Button4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -475,7 +483,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc11"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -489,7 +497,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc12"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -503,7 +511,8 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana46"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana46"
                 android:id="@+id/togglec4Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -515,7 +524,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglec5Button9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -539,7 +548,8 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana52"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana52"
                 android:id="@+id/togglec5Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -551,7 +561,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec4Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -564,7 +574,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc13"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -578,7 +588,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc14"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -592,7 +602,8 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c android:onClick="zmiana56"
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
+                android:onClick="zmiana56"
                 android:id="@+id/togglec5Button6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -604,7 +615,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc15"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -618,7 +629,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc16"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -632,7 +643,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec5Button7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -654,7 +665,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc17"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -668,7 +679,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc18"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -682,7 +693,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc20"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -696,7 +707,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec2Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -709,7 +720,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/sbtnc3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -722,7 +733,7 @@
                 tools:layout_editor_absoluteX="188dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/sbtnc2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -735,7 +746,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/togglec6Button2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -748,7 +759,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec6Button8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -770,7 +781,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc21"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -784,7 +795,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc22"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -798,7 +809,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc23"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -812,7 +823,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc24"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -827,7 +838,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc26"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -841,7 +852,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc28"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -855,7 +866,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc27"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -869,7 +880,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="154dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc25"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -891,7 +902,7 @@
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="106dp">
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglec2Button4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -904,7 +915,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc29"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -919,7 +930,7 @@
                 tools:layout_editor_absoluteX="313dp"
                 tools:layout_editor_absoluteY="44dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/sbtnc4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -932,7 +943,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/sbtnc1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -945,7 +956,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/sbtnc5"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -958,7 +969,7 @@
                 tools:layout_editor_absoluteX="104dp"
                 tools:layout_editor_absoluteY="8dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/togglecButton8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -971,7 +982,7 @@
                 tools:layout_editor_absoluteX="133dp"
                 tools:layout_editor_absoluteY="99dp" />
 
-            <lukasz.p1.kraina1.FlashButton2c
+            <com.example.p1.kraina1.PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika
                 android:id="@+id/btnc30"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -984,7 +995,7 @@
                 tools:layout_editor_absoluteX="247dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <lukasz.p1.kraina1.FlashButtonc
+            <com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika
                 android:id="@+id/sbtnc6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"

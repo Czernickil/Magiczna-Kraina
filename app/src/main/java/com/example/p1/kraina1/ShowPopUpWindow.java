@@ -1,4 +1,4 @@
-package lukasz.p1.kraina1;
+package com.example.p1.kraina1;
 
 import android.app.Activity;
 import android.os.Bundle;

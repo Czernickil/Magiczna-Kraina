@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="lukasz.p1.kraina1.portal4"
+    tools:context="com.example.p1.kraina1.PortalPlusJedenPunktDrugi"
     android:background="@drawable/portal4"
     tools:showIn="@layout/activity_portal4"
     tools:layout_editor_absoluteY="25dp"

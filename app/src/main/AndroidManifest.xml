@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lukasz.p1.kraina1">
+    package="com.example.p1.kraina1">
 
     <application
         android:name="com.example.Kraina1"
@@ -13,249 +13,249 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".MainActivity"
+            android:name=".GlownyWidokMaga"
 
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytania2"
+            android:name=".WyborPytaniaMag"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytania2c"
+            android:name=".WyborPytaniaCzarnoksieznik"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".polski1"
+            android:name=".PytaniePolskiJedenPunktMag"
             android:label="@string/title_activity_polski1"
             android:noHistory="true"
-            android:parentActivityName=".pytania2"
+            android:parentActivityName=".WyborPytaniaMag"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="lukasz.p1.kraina1.pytania2" />
+                android:value="com.example.p1.kraina1.WyborPytaniaMag" />
         </activity>
         <activity
-            android:name=".polski2"
+            android:name=".PytaniePolskiDwaPunktyMag"
             android:label="@string/title_activity_polski2"
             android:noHistory="true"
-            android:parentActivityName=".pytania2"
+            android:parentActivityName=".WyborPytaniaMag"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="lukasz.p1.kraina1.pytania2" />
+                android:value="com.example.p1.kraina1.WyborPytaniaMag" />
         </activity>
         <activity
-            android:name=".matematyka1"
+            android:name=".PytanieMatematykaJedenPunktMag"
             android:label="@string/title_activity_matematyka1"
             android:noHistory="true"
-            android:parentActivityName=".pytania2"
+            android:parentActivityName=".WyborPytaniaMag"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="lukasz.p1.kraina1.pytania2" />
+                android:value="com.example.p1.kraina1.WyborPytaniaMag" />
         </activity>
         <activity
-            android:name=".matematyka2"
+            android:name=".PytanieMatematykaDwaPunktyMag"
             android:label="@string/title_activity_matematyka2"
             android:noHistory="true"
-            android:parentActivityName=".pytania2"
+            android:parentActivityName=".WyborPytaniaMag"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="lukasz.p1.kraina1.pytania2" />
+                android:value="com.example.p1.kraina1.WyborPytaniaMag" />
         </activity>
         <activity
-            android:name=".dobrzec"
+            android:name=".DobrzeCzernoksieznikJedenPunkt"
             android:hardwareAccelerated="false"
             android:label="title_activity_dobrzec"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivityc"
+            android:name=".GlownyWidokCzarnoksieznika"
             android:label="title_activity_mainc"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".dobrze2c"
+            android:name=".DobrzeCzernoksieznikDwaPunkty"
             android:hardwareAccelerated="false"
             android:label="title_activity_dobrze2c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".dobrze3c"
+            android:name=".DobrzeCzernoksieznikTrzyPunkty"
             android:hardwareAccelerated="false"
             android:label="title_activity_dobrze3c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zlec"
+            android:name=".ZlaOdpowiedzCzarnoksieznika"
             android:hardwareAccelerated="false"
             android:label="title_activity_zlec"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".dobrze"
+            android:name=".DobrzeMagJedenPunkt"
             android:hardwareAccelerated="false"
             android:label="@string/title_activity_dobrze"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".dobrze2"
+            android:name=".DobrzeMagDwaPunkty"
             android:hardwareAccelerated="false"
             android:label="title_activity_dobrze2"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".dobrze3"
+            android:name=".DobrzeMagTrzyPunkty"
             android:hardwareAccelerated="false"
             android:label="title_activity_dobrze3"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zle"
+            android:name=".ZlaOdpowiedzMaga"
             android:hardwareAccelerated="false"
             android:label="@string/title_activity_zle"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".polski3"
+            android:name=".PytaniePolskiTrzyPunktyMag"
             android:label="@string/title_activity_polski3"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytztxt"
+            android:name=".PytanieTesktowe"
             android:label="@string/title_activity_pytztxt"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".matematyka3"
+            android:name=".PytanieMatematykaTrzyPunktyMag"
             android:label="@string/title_activity_matematyka3"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".przyroda1"
+            android:name=".PytaniePrzyrodaJedenPunktMag"
             android:label="@string/title_activity_przyroda1"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".przyroda2"
+            android:name=".PytaniePrzyrodaDwaPunktyMag"
             android:label="@string/title_activity_przyroda2"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".przyroda3"
+            android:name=".PytaniePrzyrodaTrzyPunktyMag"
             android:label="@string/title_activity_przyroda3"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zycie1"
+            android:name=".PytanieZycieJedenPunktMag"
             android:label="@string/title_activity_zycie1"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zycie2"
+            android:name=".PytanieZycieDwaPunktyMag"
             android:label="@string/title_activity_zycie2"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".polski1c"
+            android:name=".PytaniePolskiJedenPunktCzarnoksieznik"
             android:label="title_activity_polski1c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".polski2c"
+            android:name=".PytaniePolskiDwaPunktyCzarnoksieznik"
             android:label="title_activity_polski2c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".polski3c"
+            android:name=".PytaniePolskiTrzyPunktyCzarnoksieznik"
             android:label="title_activity_polski3c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".matematyka1c"
+            android:name=".PytanieMatematykaJedenPunktCzarnoksieznik"
             android:label="title_activity_matematyka1c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".matematyka2c"
+            android:name=".PytanieMatematykaDwaPunktyCzarnoksieznik"
             android:label="title_activity_matematyka2c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".matematyka3c"
+            android:name=".PytanieMatematykaTrzyPunktyCzarnoksieznik"
             android:label="title_activity_matematyka3c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".przyroda1c"
+            android:name=".PytaniePrzyrodaJedenPunktCzarnoksieznik"
             android:label="title_activity_przyroda1c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".przyroda2c"
+            android:name=".PytaniePrzyrodaDwaPunktyCzarnoksieznik"
             android:label="title_activity_przyroda2c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".przyroda3c"
+            android:name=".PytaniePrzyrodaTrzyPunktyCzarnoksieznik"
             android:label="title_activity_przyroda3c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zycie1c"
+            android:name=".PytanieZycieJedenPunktCzarnoksieznik"
             android:label="title_activity_zycie1c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zycie2c"
+            android:name=".PytanieZycieDwaPunktyCzarnoksieznik"
             android:label="title_activity_zycie2c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zycie3c"
+            android:name=".PytanieZycieTrzyPunktyCzarnoksieznik"
             android:label="title_activity_zycie3c"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".zycie3"
+            android:name=".PytanieZycieTrzyPunktyMag"
             android:label="@string/title_activity_zycie3"
             android:noHistory="true"
             android:screenOrientation="portrait"
@@ -266,128 +266,128 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".instrukcja"
+            android:name=".InstrukcjaPoczatek"
             android:label="@string/title_activity_instrukcja"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".intrukcjac"
+            android:name=".InstrukcjaSrodek"
             android:label="@string/title_activity_intrukcjac"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".instrukcjaf"
+            android:name=".InstrukcjaKoniec"
             android:label="@string/title_activity_instrukcjaf"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".autorzy"
+            android:name=".Autrorzy"
             android:label="@string/title_activity_autorzy"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Koniec"
+            android:name=".KoniecMagOdkrylSkrzaty"
             android:label="@string/title_activity_koniec"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Koniecc"
+            android:name=".KoniecCzarnoksieznikOdkrylSkrzaty"
             android:label="@string/title_activity_koniecc"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".wybport"
+            android:name=".WyborPortalu"
             android:label="@string/title_activity_wybport"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal1"
+            android:name=".PortalPlusTrzyPunkty"
             android:hardwareAccelerated="false"
             android:label="@string/title_activity_portal1"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal2"
+            android:name=".PortalPlusDwaPunkty"
             android:hardwareAccelerated="false"
             android:label="portal2"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal3"
+            android:name=".PortalPlusJedenPunktPierwszy"
             android:hardwareAccelerated="false"
             android:label="portal3"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal4"
+            android:name=".PortalPlusJedenPunktDrugi"
             android:hardwareAccelerated="false"
             android:label="portal4"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal5"
+            android:name=".PortalMinusJedenPunktPierwszy"
             android:hardwareAccelerated="false"
             android:label="portal5"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal6"
+            android:name=".PortalMinusJedenPunktDrugi"
             android:hardwareAccelerated="false"
             android:label="portal6"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal7"
+            android:name=".PortalMinusDwaPunkty"
             android:hardwareAccelerated="false"
             android:label="portal7"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal8"
+            android:name=".PortalMinusTrzyPunkty"
             android:hardwareAccelerated="false"
             android:label="portal8"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".portal9"
+            android:name=".PortalMinusCzteryPunkty"
             android:hardwareAccelerated="false"
             android:label="portal9"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytobr"
+            android:name=".PytanieObrazkowe"
             android:label="@string/title_activity_pytobr"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytzab"
+            android:name=".PytanieZabawne"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytreb"
+            android:name=".PytanieRebusowe"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".pytlit"
+            android:name=".PytanieLiterkowe"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -402,7 +402,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".opcje"
+        <activity android:name=".Opcje"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"

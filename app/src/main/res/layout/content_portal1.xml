@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="lukasz.p1.kraina1.portal1"
+    tools:context="com.example.p1.kraina1.PortalPlusTrzyPunkty"
     android:background="@drawable/portal1"
     tools:showIn="@layout/activity_portal1"
     tools:layout_editor_absoluteY="25dp"
@@ -23,7 +23,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="16dp" />
 
-    <lukasz.p1.kraina1.GifView
+    <com.example.p1.kraina1.GifSkrzatBezZmianyMag
         android:id="@+id/gif"
         android:layout_width="500dp"
         android:layout_height="500dp"

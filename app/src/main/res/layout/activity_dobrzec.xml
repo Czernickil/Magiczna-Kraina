@@ -40,7 +40,7 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <lukasz.p1.kraina1.GifViewzc
+    <com.example.p1.kraina1.GifSkrzatZeZmianaCzarnoksieznik
         android:id="@+id/gif"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -53,7 +53,7 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1" />
 
-    <lukasz.p1.kraina1.GifViewc
+    <com.example.p1.kraina1.GifSkrzatBezZmianyCzarnoksieznik
         android:id="@+id/gifz"
         android:layout_width="150dp"
         android:layout_height="150dp"

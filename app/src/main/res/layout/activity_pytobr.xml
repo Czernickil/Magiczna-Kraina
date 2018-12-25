@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pyto"
-    tools:context="lukasz.p1.kraina1.pytobr">
+    tools:context="com.example.p1.kraina1.PytanieObrazkowe">
     <include layout="@layout/content_pytobr" />
 </android.support.design.widget.CoordinatorLayout>

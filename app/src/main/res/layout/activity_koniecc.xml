@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/image69"
-    tools:context="lukasz.p1.kraina1.Koniecc">
+    tools:context="com.example.p1.kraina1.KoniecCzarnoksieznikOdkrylSkrzaty">
 
     <include layout="@layout/content_koniecc" />
 

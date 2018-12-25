@@ -1,4 +1,4 @@
-package com.lukasz.p1.kraina1;
+package com.example.p1.kraina1;
 
 import android.graphics.Bitmap;
 

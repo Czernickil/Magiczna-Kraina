@@ -1,4 +1,4 @@
-package lukasz.p1.kraina1;
+package com.example.p1.kraina1;
 
 
 import android.support.test.espresso.ViewInteraction;
@@ -17,7 +17,7 @@ import static android.support.test.espresso.action.ViewActions.*;
 import static android.support.test.espresso.assertion.ViewAssertions.*;
 import static android.support.test.espresso.matcher.ViewMatchers.*;
 
-import lukasz.p1.kraina1.R;
+import com.example.p1.kraina1.R;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

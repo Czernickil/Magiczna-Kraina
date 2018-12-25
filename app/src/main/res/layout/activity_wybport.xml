@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:background="@drawable/image7c"
-    tools:context="lukasz.p1.kraina1.wybport">
+    tools:context="com.example.p1.kraina1.WyborPortalu">
 
-    <lukasz.p1.kraina1.FlashButton4
+    <com.example.p1.kraina1.PrzyciskWyboruPortalu
         android:id="@+id/port1"
         android:layout_width="100dp"
         android:layout_height="200dp"
@@ -29,7 +29,7 @@
         app:layout_constraintLeft_toRightOf="@+id/port3"
         app:layout_constraintRight_toLeftOf="@+id/port2" />
 
-    <lukasz.p1.kraina1.FlashButton4
+    <com.example.p1.kraina1.PrzyciskWyboruPortalu
         android:id="@+id/port2"
         android:layout_width="100dp"
         android:layout_height="200dp"
@@ -46,7 +46,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <lukasz.p1.kraina1.FlashButton4
+    <com.example.p1.kraina1.PrzyciskWyboruPortalu
         android:id="@+id/port3"
         android:layout_width="100dp"
         android:layout_height="200dp"

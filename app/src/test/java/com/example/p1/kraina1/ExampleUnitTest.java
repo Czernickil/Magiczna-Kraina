@@ -1,4 +1,4 @@
-package lukasz.p1.kraina1;
+package com.example.p1.kraina1;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-import static lukasz.p1.kraina1.Menu.kon; public class ExampleUnitTest {
+import static com.example.p1.kraina1.Menu.kon; public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);

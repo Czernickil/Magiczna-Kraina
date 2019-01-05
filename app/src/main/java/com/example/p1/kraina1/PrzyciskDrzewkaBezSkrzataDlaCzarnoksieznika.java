@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 
-
 public class PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika extends android.support.v7.widget.AppCompatImageButton {
 // Przycisk ktory jest drzewem za ktorym nie ma skrzata dla czarnoksieznika
 
@@ -31,6 +30,7 @@ public class PrzyciskDrzewkaBezSkrzataDlaCzarnoksieznika extends android.support
 
     public interface FlashListener {
         void onOn();
+
         void onOff();
     }
 

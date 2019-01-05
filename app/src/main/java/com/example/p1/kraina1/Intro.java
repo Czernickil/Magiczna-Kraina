@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 
-
 public class Intro extends Activity {
     public void onStart() {
         super.onStart();

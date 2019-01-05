@@ -4,11 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.view.ViewGroup.LayoutParams;
 
 public class ShowPopUpWindow extends Activity {
 
@@ -19,7 +19,6 @@ public class ShowPopUpWindow extends Activity {
     Button btnClickHere;
     LinearLayout containerLayout;
     TextView tvMsg;
-
 
 
     public void onCreate(Bundle savedInstanceState) {

@@ -3,9 +3,7 @@ package com.example.p1.kraina1;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import static com.example.p1.kraina1.Menu.kon;
 public class PrzyciskWyboruPortalu extends android.support.v7.widget.AppCompatImageButton {
-
 
 
     public enum FlashEnum4 {
@@ -28,8 +26,10 @@ public class PrzyciskWyboruPortalu extends android.support.v7.widget.AppCompatIm
         createDrawableState();
 
     }
+
     public interface FlashListener {
         void onOn();
+
         void onOff();
     }
 

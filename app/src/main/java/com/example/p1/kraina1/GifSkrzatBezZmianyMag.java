@@ -3,14 +3,15 @@ package com.example.p1.kraina1;
 /**
  * Created by p1 on 2017-10-27.
  */
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Movie;
 import android.util.AttributeSet;
 import android.view.View;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 
 public class GifSkrzatBezZmianyMag extends View {
 
@@ -36,7 +37,7 @@ public class GifSkrzatBezZmianyMag extends View {
         init(context);
     }
 
-    private void init(Context context){
+    private void init(Context context) {
         setFocusable(true);
         gifInputStream = context.getResources()
                 .openRawResource(R.raw.zly);
@@ -69,15 +70,15 @@ public class GifSkrzatBezZmianyMag extends View {
         setMeasuredDimension(movieWidth, movieHeight);
     }
 
-    public int getMovieWidth(){
+    public int getMovieWidth() {
         return movieWidth;
     }
 
-    public int getMovieHeight(){
+    public int getMovieHeight() {
         return movieHeight;
     }
 
-    public long getMovieDuration(){
+    public long getMovieDuration() {
         return movieDuration;
     }
 
@@ -96,7 +97,7 @@ public class GifSkrzatBezZmianyMag extends View {
                 dur = 1000;
             }
 
-            int relTime = (int)((now - mMovieStart) % dur);
+            int relTime = (int) ((now - mMovieStart) % dur);
 
             gifMovie.setTime(relTime);
 

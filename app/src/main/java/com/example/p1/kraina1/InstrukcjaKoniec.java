@@ -5,7 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class InstrukcjaKoniec extends Activity {    public void onStart(){         super.onStart(); Menu.poprawneWylaczenie =0;}
+public class InstrukcjaKoniec extends Activity {
+    public void onStart() {
+        super.onStart();
+        Menu.poprawneWylaczenie = 0;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,17 +17,22 @@ public class InstrukcjaKoniec extends Activity {    public void onStart(){      
         setContentView(R.layout.activity_instrukcjaf);
 
     }
-    public void onPause(){
+
+    public void onPause() {
         super.onPause();
-        if(Menu.poprawneWylaczenie ==0){
-                        Intro.poprawneWylaczenieDwa =0;             Intro.adp.run();
+        if (Menu.poprawneWylaczenie == 0) {
+            Intro.poprawneWylaczenieDwa = 0;
+            Intro.adp.run();
         }
     }
-    public void onResume(){
+
+    public void onResume() {
         super.onResume();
-        }
-    public void dalej(View view){
+    }
+
+    public void dalej(View view) {
         Intent intent = new Intent(InstrukcjaKoniec.this, Menu.class);
-        Menu.poprawneWylaczenie =1; startActivity(intent);
+        Menu.poprawneWylaczenie = 1;
+        startActivity(intent);
     }
 }

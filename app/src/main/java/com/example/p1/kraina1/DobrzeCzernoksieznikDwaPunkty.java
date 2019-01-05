@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.punktyCzarnoksieznika;
-import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc24;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc27;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc28;
@@ -245,6 +245,7 @@ public class DobrzeCzernoksieznikDwaPunkty extends Activity {
             }
         }
     }
+
     public static int getDefaultsp(String key, Context context) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return preferences.getInt(key, punktyCzarnoksieznika);
@@ -257,6 +258,7 @@ public class DobrzeCzernoksieznikDwaPunkty extends Activity {
         editor.putInt(key, value);
         editor.commit();
     }
+
     void kill_activity() {
         finish();
     }

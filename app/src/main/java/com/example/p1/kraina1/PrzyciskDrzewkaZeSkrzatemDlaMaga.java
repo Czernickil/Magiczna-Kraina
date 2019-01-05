@@ -3,8 +3,6 @@ package com.example.p1.kraina1;
 import android.content.Context;
 import android.util.AttributeSet;
 
-
-
 import static com.example.p1.kraina1.GlownyWidokMaga.skrzatyMaga;
 
 public class PrzyciskDrzewkaZeSkrzatemDlaMaga extends android.support.v7.widget.AppCompatImageButton {
@@ -33,7 +31,9 @@ public class PrzyciskDrzewkaZeSkrzatemDlaMaga extends android.support.v7.widget.
 
     public interface FlashListener {
         void onAutomatic();
+
         void onOn();
+
         void onOff();
     }
 
@@ -50,7 +50,6 @@ public class PrzyciskDrzewkaZeSkrzatemDlaMaga extends android.support.v7.widget.
     @Override
     public boolean performClick() {
         super.performClick();
-        int next = ((mState.ordinal() + 1) % FlashEnum.values().length);
         if (getState() == FlashEnum.AUTOMATIC) {
             skrzatyMaga++;
             if (GlownyWidokMaga.losowanieDodatkowegoPunktu == 1)

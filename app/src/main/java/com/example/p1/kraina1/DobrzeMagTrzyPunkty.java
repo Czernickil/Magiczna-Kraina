@@ -1,19 +1,20 @@
 package com.example.p1.kraina1;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.app.Activity;
 import android.view.View;
 import android.widget.TextView;
 
 import java.util.Random;
-import static com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaMaga.FlashEnum.OFF;
-import static com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaMaga.FlashEnum.ON;
+
+import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
 import static com.example.p1.kraina1.GlownyWidokMaga.idskrzat;
+import static com.example.p1.kraina1.GlownyWidokMaga.losowanieDodatkowegoPunktu;
 import static com.example.p1.kraina1.GlownyWidokMaga.punktyMaga;
 import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults24;
 import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults27;
@@ -35,8 +36,8 @@ import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults7;
 import static com.example.p1.kraina1.GlownyWidokMaga.setDefaults8;
 import static com.example.p1.kraina1.GlownyWidokMaga.setsbtn1;
 import static com.example.p1.kraina1.GlownyWidokMaga.setsbtn2;
-import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
-import static com.example.p1.kraina1.GlownyWidokMaga.losowanieDodatkowegoPunktu;
+import static com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaMaga.FlashEnum.OFF;
+import static com.example.p1.kraina1.PrzyciskDrzewkaZeSkrzatemDlaMaga.FlashEnum.ON;
 
 public class DobrzeMagTrzyPunkty extends Activity {
     public void onStart() {

@@ -19,7 +19,7 @@ public class GifAnimationDrawable extends AnimationDrawable
 {
     private boolean decoded;
 
-    private com.com.example.p1.kraina1.GifDecoder mGifDecoder;
+    private com.example.p1.kraina1.GifDecoder mGifDecoder;
 
     private Bitmap mTmpBitmap;
 
@@ -42,7 +42,7 @@ public class GifAnimationDrawable extends AnimationDrawable
         InputStream bis = is;
         if (!BufferedInputStream.class.isInstance(bis)) bis = new BufferedInputStream(is, 32768);
         decoded = false;
-        mGifDecoder = new com.com.example.p1.kraina1.GifDecoder();
+        mGifDecoder = new com.example.p1.kraina1.GifDecoder();
         mGifDecoder.read(bis);
         mTmpBitmap = mGifDecoder.getFrame(0);
         android.util.Log.v("GifAnimationDrawable", "===>Lead frame: [" + width + "x" + height + "; " + mGifDecoder.getDelay(0) + ";" + mGifDecoder.getLoopCount() + "]");
@@ -80,12 +80,15 @@ public class GifAnimationDrawable extends AnimationDrawable
     public int getMinimumHeight() {
         return height;
     }
+
     public int getMinimumWidth() {
         return width;
     }
+
     public int getIntrinsicHeight() {
         return height;
     }
+
     public int getIntrinsicWidth() {
         return width;
     }

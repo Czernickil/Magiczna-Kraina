@@ -1,22 +1,20 @@
 package com.example.p1.kraina1;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.app.Activity;
 import android.view.View;
 import android.widget.TextView;
 
 import java.util.Random;
 
-
-
+import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.idskrzatc;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.punktyCzarnoksieznika;
-import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc24;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc27;
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.setDefaultsc28;
@@ -46,6 +44,7 @@ public class DobrzeCzernoksieznikJedenPunkt extends Activity {
         super.onStart();
         Menu.poprawneWylaczenie = 0;
     }
+
     public void onPause() {
         super.onPause();
         if (Menu.poprawneWylaczenie == 0) {
@@ -53,9 +52,11 @@ public class DobrzeCzernoksieznikJedenPunkt extends Activity {
             Intro.adp.run();
         }
     }
+
     public void onResume() {
         super.onResume();
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -244,6 +245,7 @@ public class DobrzeCzernoksieznikJedenPunkt extends Activity {
         }
 
     }
+
     public static int getDefaultsp(String key, Context context) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return preferences.getInt(key, punktyCzarnoksieznika);

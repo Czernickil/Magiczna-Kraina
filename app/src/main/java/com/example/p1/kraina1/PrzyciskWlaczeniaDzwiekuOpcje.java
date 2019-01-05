@@ -6,7 +6,6 @@ import android.util.AttributeSet;
 public class PrzyciskWlaczeniaDzwiekuOpcje extends android.support.v7.widget.AppCompatImageButton {
 
 
-
     public enum FlashEnum6 {
         ON6,
         OFF6;
@@ -20,14 +19,17 @@ public class PrzyciskWlaczeniaDzwiekuOpcje extends android.support.v7.widget.App
             }
         }
     }
+
     public void setState(FlashEnum6 state) {
         if (state == null) return;
         this.mState = state;
         createDrawableState();
 
     }
+
     public interface FlashListener {
         void onOn();
+
         void onOff();
     }
 

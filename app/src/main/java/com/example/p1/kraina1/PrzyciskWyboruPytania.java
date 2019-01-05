@@ -2,10 +2,8 @@ package com.example.p1.kraina1;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ImageButton;
 
 public class PrzyciskWyboruPytania extends android.support.v7.widget.AppCompatImageButton {
-
 
 
     public enum FlashEnum3 {
@@ -24,14 +22,17 @@ public class PrzyciskWyboruPytania extends android.support.v7.widget.AppCompatIm
             }
         }
     }
+
     public void setState(FlashEnum3 state) {
         if (state == null) return;
         this.mState = state;
         createDrawableState();
 
     }
+
     public interface FlashListener {
         void onOn();
+
         void onOff();
     }
 

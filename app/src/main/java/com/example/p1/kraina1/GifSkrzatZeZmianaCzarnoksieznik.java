@@ -37,7 +37,7 @@ public class GifSkrzatZeZmianaCzarnoksieznik extends View {
         init(context);
     }
 
-    private void init(Context context){
+    private void init(Context context) {
         setFocusable(true);
         gifInputStream = context.getResources()
                 .openRawResource(R.raw.dobryz);
@@ -70,15 +70,15 @@ public class GifSkrzatZeZmianaCzarnoksieznik extends View {
         setMeasuredDimension(movieWidth, movieHeight);
     }
 
-    public int getMovieWidth(){
+    public int getMovieWidth() {
         return movieWidth;
     }
 
-    public int getMovieHeight(){
+    public int getMovieHeight() {
         return movieHeight;
     }
 
-    public long getMovieDuration(){
+    public long getMovieDuration() {
         return movieDuration;
     }
 
@@ -97,7 +97,7 @@ public class GifSkrzatZeZmianaCzarnoksieznik extends View {
                 dur = 1000;
             }
 
-            int relTime = (int)((now - mMovieStart) % dur);
+            int relTime = (int) ((now - mMovieStart) % dur);
 
             gifMovie.setTime(relTime);
 

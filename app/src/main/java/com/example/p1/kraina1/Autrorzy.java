@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 
-
 public class Autrorzy extends Activity {
     public void onStart() {
         super.onStart();
@@ -18,6 +17,7 @@ public class Autrorzy extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autorzy);
     }
+
     public void onPause() {
         super.onPause();
         if (Menu.poprawneWylaczenie == 0) {

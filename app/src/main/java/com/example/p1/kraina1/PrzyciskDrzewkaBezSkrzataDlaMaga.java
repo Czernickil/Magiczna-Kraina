@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 
-
 public class PrzyciskDrzewkaBezSkrzataDlaMaga extends android.support.v7.widget.AppCompatImageButton {
 // Przycisk ktory jest drzewem za ktorym nie ma skrzata dla czarodzieja
 
@@ -14,7 +13,7 @@ public class PrzyciskDrzewkaBezSkrzataDlaMaga extends android.support.v7.widget.
         OFF2; //trawa
 
 
-        public static FlashEnum2 toMyEnum (String myEnumString) {
+        public static FlashEnum2 toMyEnum(String myEnumString) {
             try {
                 return valueOf(myEnumString);
             } catch (Exception ex) {
@@ -25,7 +24,7 @@ public class PrzyciskDrzewkaBezSkrzataDlaMaga extends android.support.v7.widget.
     }
 
     public void setState(FlashEnum2 state) {
-        if(state == null)return;
+        if (state == null) return;
         this.mState = state;
         createDrawableState();
 
@@ -33,6 +32,7 @@ public class PrzyciskDrzewkaBezSkrzataDlaMaga extends android.support.v7.widget.
 
     public interface FlashListener {
         void onOn();
+
         void onOff();
     }
 
@@ -51,14 +51,15 @@ public class PrzyciskDrzewkaBezSkrzataDlaMaga extends android.support.v7.widget.
     public boolean performClick() {
         super.performClick();
         int next = ((mState.ordinal() + 1) % FlashEnum2.values().length);
-        if (getState()!=FlashEnum2.OFF2){
+        if (getState() != FlashEnum2.OFF2) {
             setState(FlashEnum2.values()[next]);
-            performFlashClick();}
+            performFlashClick();
+        }
         return true;
     }
 
     public void performFlashClick() {
-        if(mFlashListener == null)return;
+        if (mFlashListener == null) return;
         switch (mState) {
             case ON2:
                 mFlashListener.onOn();

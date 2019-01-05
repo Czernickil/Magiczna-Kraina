@@ -17,8 +17,8 @@ public class GifDecoder
     public static final int STATUS_FORMAT_ERROR = 1;
     public static final int STATUS_OPEN_ERROR = 2;
     protected static final int MAX_STACK_SIZE = 4096;
-    public static final    int MIN_DELAY                   = 100;
-    public static final    int MIN_DELAY_ENFORCE_THRESHOLD = 20;
+    public static final int MIN_DELAY = 100;
+    public static final int MIN_DELAY_ENFORCE_THRESHOLD = 20;
     protected InputStream in;
     protected int status;
     protected int width; // full image width
@@ -57,8 +57,7 @@ public class GifDecoder
 
     private boolean readComplete;
 
-    public GifDecoder()
-    {
+    public GifDecoder() {
         readComplete = false;
     }
 
@@ -75,8 +74,7 @@ public class GifDecoder
     /**
      * Gets display duration for specified frame.
      *
-     * @param n
-     *          int index of frame
+     * @param n int index of frame
      * @return delay in milliseconds
      */
     public int getDelay(int n) {
@@ -218,12 +216,10 @@ public class GifDecoder
     /**
      * Reads GIF image from stream
      *
-     * @param is
-     *          containing GIF file.
+     * @param is containing GIF file.
      * @return read status code (0 = no errors)
      */
-    public int read(InputStream is)
-    {
+    public int read(InputStream is) {
         init();
         if (is != null) {
             in = is;
@@ -241,8 +237,7 @@ public class GifDecoder
         return status;
     }
 
-    public void complete()
-    {
+    public void complete() {
         readContents();
         try {
             in.close();
@@ -283,7 +278,7 @@ public class GifDecoder
         }
         // Decode GIF pixel stream.
         datum = bits = count = first = top = pi = bi = 0;
-        for (i = 0; i < npix;) {
+        for (i = 0; i < npix; ) {
             if (top == 0) {
                 if (bits < code_size) {
                     // Load bytes until there are enough bits for a code.
@@ -419,8 +414,7 @@ public class GifDecoder
     /**
      * Reads color table as 256 RGB integer values
      *
-     * @param ncolors
-     *          int number of colors to read
+     * @param ncolors int number of colors to read
      * @return int array containing 256 colors (packed ARGB with full alpha)
      */
     protected int[] readColorTable(int ncolors) {
@@ -460,7 +454,7 @@ public class GifDecoder
             switch (code) {
                 case 0x2C: // image separator
                     readBitmap();
-                    if(!readComplete) return;
+                    if (!readComplete) return;
                     break;
                 case 0x21: // extension
                     code = read();

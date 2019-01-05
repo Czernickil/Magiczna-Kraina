@@ -3,9 +3,8 @@ package com.example.p1.kraina1;
 import android.content.Context;
 import android.util.AttributeSet;
 
-
-
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.skrzatyCzarnoksieznika;
+
 public class PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika extends android.support.v7.widget.AppCompatImageButton {
 // Przycisk drzewka dla czarnoksieznka
 
@@ -14,7 +13,7 @@ public class PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika extends android.support
         ON, //skrzat dobry
         OFF; // skrzat zly
 
-        public static FlashEnum toMyEnum (String myEnumString) {
+        public static FlashEnum toMyEnum(String myEnumString) {
             try {
                 return valueOf(myEnumString);
             } catch (Exception ex) {
@@ -25,7 +24,7 @@ public class PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika extends android.support
     }
 
     public void setState(FlashEnum state) {
-        if(state == null)return;
+        if (state == null) return;
         this.mState = state;
         createDrawableState();
 
@@ -33,7 +32,9 @@ public class PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika extends android.support
 
     public interface FlashListener {
         void onAutomatic();
+
         void onOn();
+
         void onOff();
     }
 
@@ -50,22 +51,21 @@ public class PrzyciskDrzewkaZeSkrzatemDlaCzarnoksieznika extends android.support
     @Override
     public boolean performClick() {
         super.performClick();
-
-        int next = ((mState.ordinal() + 1) % FlashEnum.values().length);
-        if (getState()== FlashEnum.AUTOMATIC){
+        if (getState() == FlashEnum.AUTOMATIC) {
             skrzatyCzarnoksieznika++;
-            if(GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika ==1)
-        setState(FlashEnum.ON);
-            if(GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika ==0)
+            if (GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika == 1)
+                setState(FlashEnum.ON);
+            if (GlownyWidokCzarnoksieznika.czyTuraCzarnoksieznika == 0)
                 setState(FlashEnum.OFF);
-        performFlashClick();
-        return true;}
+            performFlashClick();
+            return true;
+        }
         return false;
     }
 
 
     void performFlashClick() {
-        if(mFlashListener == null)return;
+        if (mFlashListener == null) return;
         switch (mState) {
             case AUTOMATIC:
                 mFlashListener.onAutomatic();

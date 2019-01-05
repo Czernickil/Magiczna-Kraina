@@ -1,9 +1,8 @@
 package com.example.p1.kraina1;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.app.Activity;
 import android.view.View;
 
 public class InstrukcjaPoczatek extends Activity {

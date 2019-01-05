@@ -36,7 +36,8 @@ public class GifyPortalowe extends View {
         super(context, attrs, defStyleAttr);
         init(context);
     }
-    public void setGif(Context context, int giff){
+
+    public void setGif(Context context, int giff) {
         setFocusable(true);
         gifInputStream = context.getResources()
                 .openRawResource(giff);
@@ -49,7 +50,8 @@ public class GifyPortalowe extends View {
         movieHeight = gifMovie.height();
         movieDuration = gifMovie.duration();
     }
-    private void init(Context context){
+
+    private void init(Context context) {
 
     }
 
@@ -72,15 +74,15 @@ public class GifyPortalowe extends View {
         setMeasuredDimension(movieWidth, movieHeight);
     }
 
-    public int getMovieWidth(){
+    public int getMovieWidth() {
         return movieWidth;
     }
 
-    public int getMovieHeight(){
+    public int getMovieHeight() {
         return movieHeight;
     }
 
-    public long getMovieDuration(){
+    public long getMovieDuration() {
         return movieDuration;
     }
 
@@ -99,7 +101,7 @@ public class GifyPortalowe extends View {
                 dur = 1000;
             }
 
-            int relTime = (int)((now - mMovieStart) % dur);
+            int relTime = (int) ((now - mMovieStart) % dur);
 
             gifMovie.setTime(relTime);
 

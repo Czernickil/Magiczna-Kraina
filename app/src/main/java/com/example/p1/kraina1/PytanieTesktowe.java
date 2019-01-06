@@ -82,13 +82,13 @@ public class PytanieTesktowe extends Activity {
         pytmat1[3][3] = "8 zł";
         pytmat1[3][4] = "9 zł";
         pytmat1[3][6] = "10 zł";
-        pytmat1[4][0] = "Którego poprawneWylaczenieDwa banknotów nie można rozmienić na pół tak aby były 2 banknoty?";
+        pytmat1[4][0] = "Którego z banknotów nie można rozmienić na pół tak aby były 2 banknoty?";
         pytmat1[4][1] = "20 zł";
         pytmat1[4][2] = "100 zł";
         pytmat1[4][3] = "200 zł";
         pytmat1[4][4] = "50 zł";
         pytmat1[4][6] = "50 zł";
-        pytmat1[5][0] = "Której poprawneWylaczenieDwa monet nie można rozmienić na pół tak aby były 2 monety?";
+        pytmat1[5][0] = "Której z monet nie można rozmienić na pół tak aby były 2 monety?";
         pytmat1[5][1] = "2 zł";
         pytmat1[5][2] = "5 zł";
         pytmat1[5][3] = "20 gr";
@@ -371,7 +371,7 @@ public class PytanieTesktowe extends Activity {
         pytpol3[7][5] = "W";
         pytpol3[0][0] = "Która forma jest poprawna?";
         pytpol3[0][1] = "Abarzur";
-        pytpol3[0][2] = "Abażur";
+        pytpol3[0][2] = "Abażór";
         pytpol3[0][3] = "Abarzór";
         pytpol3[0][4] = "Abażur";
         pytpol3[0][6] = "Abażur";
@@ -500,7 +500,7 @@ public class PytanieTesktowe extends Activity {
         pytprz2[1][3] = "Krowa";
         pytprz2[1][4] = "Wąż";
         pytprz2[1][6] = "Krowa";
-        pytprz2[2][0] = "Który poprawneWylaczenieDwa tych ptaków umie latać?";
+        pytprz2[2][0] = "Który z tych ptaków umie latać?";
         pytprz2[2][1] = "Orzeł";
         pytprz2[2][2] = "Pingwin";
         pytprz2[2][3] = "Kura";
@@ -555,7 +555,7 @@ public class PytanieTesktowe extends Activity {
         pytprz3[0][3] = "Krowa";
         pytprz3[0][4] = "Lis";
         pytprz3[0][6] = "Płetwal Błękitny";
-        pytprz3[1][0] = "Które poprawneWylaczenieDwa tych drzew jest liściaste?";
+        pytprz3[1][0] = "Które z tych drzew jest liściaste?";
         pytprz3[1][1] = "Sosna";
         pytprz3[1][2] = "świerk";
         pytprz3[1][3] = "Jodła";
@@ -567,7 +567,7 @@ public class PytanieTesktowe extends Activity {
         pytprz3[2][3] = "W Serbii";
         pytprz3[2][4] = "W Kanadzie";
         pytprz3[2][6] = "W Egipcie";
-        pytprz3[3][0] = "Które poprawneWylaczenieDwa tych zwierząt jest najmniejsze";
+        pytprz3[3][0] = "Które z tych zwierząt jest najmniejsze";
         pytprz3[3][1] = "Mysz";
         pytprz3[3][2] = "Mrówka";
         pytprz3[3][3] = "Motyl";
@@ -638,7 +638,7 @@ public class PytanieTesktowe extends Activity {
         pytzyc1[3][3] = "Cioci";
         pytzyc1[3][4] = "Wujkowi";
         pytzyc1[3][6] = "Nieznajomemu";
-        pytzyc1[4][0] = "Która poprawneWylaczenieDwa tych rzeczy nie leży lub stoi na podłodze?";
+        pytzyc1[4][0] = "Która z tych rzeczy nie leży lub stoi na podłodze?";
         pytzyc1[4][1] = "dywan";
         pytzyc1[4][2] = "żyrandol";
         pytzyc1[4][3] = "biurko";
@@ -694,7 +694,7 @@ public class PytanieTesktowe extends Activity {
         pytzyc2[2][4] = "Po ścieżce rowerowej";
         pytzyc2[2][6] = "Po chodniku";
         pytzyc2[3][0] = "Po wejściu da autobusu trzeba:";
-        pytzyc2[3][1] = "Puścić muzykę poprawneWylaczenieDwa telefonu";
+        pytzyc2[3][1] = "Puścić muzykę z telefonu";
         pytzyc2[3][2] = "Rozsiąść się";
         pytzyc2[3][3] = "Krzyczeć";
         pytzyc2[3][4] = "Skasować bilet";
@@ -758,7 +758,7 @@ public class PytanieTesktowe extends Activity {
         pytzyc3[3][1] = "999";
         pytzyc3[3][2] = "997";
         pytzyc3[3][3] = "998";
-        pytzyc3[3][4] = "69";
+        pytzyc3[3][4] = "911";
         pytzyc3[3][6] = "999";
         pytzyc3[4][0] = "Co jest głównym składnikiem sernika?";
         pytzyc3[4][1] = "twaróg";
@@ -772,7 +772,7 @@ public class PytanieTesktowe extends Activity {
         pytzyc3[5][3] = "bydyń";
         pytzyc3[5][4] = "kakao";
         pytzyc3[5][6] = "kakao";
-        pytzyc3[6][0] = "Która poprawneWylaczenieDwa nazw nie jest nazwą ciasta";
+        pytzyc3[6][0] = "Która z nazw nie jest nazwą ciasta";
         pytzyc3[6][1] = "makowiec";
         pytzyc3[6][2] = "karmel";
         pytzyc3[6][3] = "mazurek";

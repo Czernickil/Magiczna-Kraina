@@ -226,6 +226,7 @@ public class Menu extends Activity {
     }
 
     public void nowa(View view) {
+        RepozytoriumPytan.nowaBaza=true;
         czyMoznaKontynuowac = 1;
         kon = 1;
         Random generator = new Random();

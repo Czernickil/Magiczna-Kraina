@@ -1246,7 +1246,8 @@ public class WyborPytaniaMag extends Activity {
         Menu.poprawneWylaczenie = 0;
         setsm("bbbbm", skrzatyMaga, this);
         setsc("bbbbc", skrzatyCzarnoksieznika, this);
-        i = generator.nextInt(8) + 1;
+     //   i = generator.nextInt(8) + 1;
+        i=0;
         toggle1p.setState(getDefaults1p("etatToggle1p", this));
         toggle2p.setState(getDefaults2p("etatToggle2p", this));
         toggle3p.setState(getDefaults3p("etatToggle3p", this));

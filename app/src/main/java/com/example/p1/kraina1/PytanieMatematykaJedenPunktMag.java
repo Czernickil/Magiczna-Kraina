@@ -13,7 +13,6 @@ public class PytanieMatematykaJedenPunktMag extends Activity {
         super.onStart();
         Menu.poprawneWylaczenie = 0;
     }
-
     TextView odp1;
     TextView odp2;
     TextView odp3;
@@ -21,7 +20,7 @@ public class PytanieMatematykaJedenPunktMag extends Activity {
     TextView pyt;
     Random generator = new Random();
     int i;
-
+    Pytanie pytanie;
     public void onPause() {
         super.onPause();
         if (Menu.poprawneWylaczenie == 0) {
@@ -43,41 +42,47 @@ public class PytanieMatematykaJedenPunktMag extends Activity {
         odp2 = (TextView) findViewById(R.id.od2);
         odp3 = (TextView) findViewById(R.id.od3);
         odp4 = (TextView) findViewById(R.id.od4);
-
         i = generator.nextInt(8);
-        while (PytanieTesktowe.getPytmat1(i, 5).equals("Z"))
+     /*   while (PytanieTesktowe.getPytpol1(i, 5).equals("Z"))
             i = generator.nextInt(8);
-        pyt.setText(PytanieTesktowe.getPytmat1(i, 0));
-        odp1.setText(PytanieTesktowe.getPytmat1(i, 1));
-        odp2.setText(PytanieTesktowe.getPytmat1(i, 2));
-        odp3.setText(PytanieTesktowe.getPytmat1(i, 3));
-        odp4.setText(PytanieTesktowe.getPytmat1(i, 4));
-        PytanieTesktowe.zajPytmat1(i);
+        pyt.setText(PytanieTesktowe.getPytpol1(i, 0));
+        odp1.setText(PytanieTesktowe.getPytpol1(i, 1));
+        odp2.setText(PytanieTesktowe.getPytpol1(i, 2));
+        odp3.setText(PytanieTesktowe.getPytpol1(i, 3));
+        odp4.setText(PytanieTesktowe.getPytpol1(i, 4));
+        PytanieTesktowe.zajPytpol1(i); */
+        RepozytoriumPytan repozytoriumPytan= new RepozytoriumPytan(getApplication());
+        pytanie = repozytoriumPytan.pozyskajPytaniaWedlugKategoriiPunktow("Matematyka", 1);
+        pyt.setText(pytanie.getPTrescPytania());
+        odp1.setText(pytanie.getPOdpowiedzA());
+        odp2.setText(pytanie.getPOdpowiedzB());
+        odp3.setText(pytanie.getPOdpowiedzC());
+        odp4.setText(pytanie.getPOdpowiedzD());
     }
 
     public void sprawdz1(View view) {
-        if (PytanieTesktowe.getPytmat1(i, 6).equals(PytanieTesktowe.getPytmat1(i, 1)))
+        if (pytanie.getPOdpowiedzA().equals(pytanie.getPPoprawnaOdpowiedz()))
             dobra(view);
         else
             zla(view);
     }
 
     public void sprawdz2(View view) {
-        if (PytanieTesktowe.getPytmat1(i, 6).equals(PytanieTesktowe.getPytmat1(i, 2)))
+        if (pytanie.getPOdpowiedzB().equals(pytanie.getPPoprawnaOdpowiedz()))
             dobra(view);
         else
             zla(view);
     }
 
     public void sprawdz3(View view) {
-        if (PytanieTesktowe.getPytmat1(i, 6).equals(PytanieTesktowe.getPytmat1(i, 3)))
+        if (pytanie.getPOdpowiedzC().equals(pytanie.getPPoprawnaOdpowiedz()))
             dobra(view);
         else
             zla(view);
     }
 
     public void sprawdz4(View view) {
-        if (PytanieTesktowe.getPytmat1(i, 6).equals(PytanieTesktowe.getPytmat1(i, 4)))
+        if (pytanie.getPOdpowiedzD().equals(pytanie.getPPoprawnaOdpowiedz()))
             dobra(view);
         else
             zla(view);

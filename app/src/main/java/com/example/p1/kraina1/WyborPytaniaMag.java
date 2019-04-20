@@ -14,8 +14,10 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.skrzatyCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokMaga.skrzatyMaga;
+import static com.example.p1.kraina1.Menu.kategoria;
 import static com.example.p1.kraina1.Menu.setsc;
 import static com.example.p1.kraina1.Menu.setsm;
+import static com.example.p1.kraina1.Menu.wartoscPunktowa;
 import static com.example.p1.kraina1.PrzyciskWyboruPytania.FlashEnum3.OFF3;
 
 public class WyborPytaniaMag extends Activity {
@@ -248,7 +250,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytaniePolskiJedenPunktMag.class);
+                kategoria="Polski";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -270,7 +274,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytaniePolskiDwaPunktyMag.class);
+                kategoria="Polski";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -292,7 +298,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytaniePolskiTrzyPunktyMag.class);
+                kategoria="Polski";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -310,7 +318,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieMatematykaJedenPunktMag.class);
+                kategoria="Matematyka";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -328,7 +338,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieMatematykaDwaPunktyMag.class);
+                kategoria="Matematyka";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -346,7 +358,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieMatematykaTrzyPunktyMag.class);
+                kategoria="Matematyka";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -368,7 +382,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaJedenPunktMag.class);
+                kategoria="Przyroda";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -390,7 +406,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaDwaPunktyMag.class);
+                kategoria="Przyroda";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -412,7 +430,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaTrzyPunktyMag.class);
+                kategoria="Przyroda";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -434,7 +454,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieJedenPunktMag.class);
+                kategoria="Zycie";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -456,7 +478,9 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieDwaPunktyMag.class);
+                kategoria="Zycie";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -478,768 +502,15 @@ public class WyborPytaniaMag extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieTrzyPunktyMag.class);
+                kategoria="Zycie";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaMag.this, PytanieABCDMaga.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
         }
     }
 
-    public void polski12(View view) {
-        if (toggle2p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytaniePolskiJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polski22(View view) {
-        if (toggle4p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytaniePolskiDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polski32(View view) {
-        if (toggle6p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytaniePrzyrodaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematyka12(View view) {
-        if (toggle8p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematyka22(View view) {
-        if (toggle10p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematyka32(View view) {
-        if (toggle12p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyroda12(View view) {
-        if (toggle14p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyroda22(View view) {
-        if (toggle16p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyroda32(View view) {
-        if (toggle18p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zycie12(View view) {
-        if (toggle20p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zycie22(View view) {
-        if (toggle22p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zycie32(View view) {
-        if (toggle24p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia1(View view) {
-        if (togglea1p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePolskiJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia2(View view) {
-        if (togglea3p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePolskiDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia3(View view) {
-        if (togglea5p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePolskiTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa1(View view) {
-        if (togglea7p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa2(View view) {
-        if (togglea9p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa3(View view) {
-        if (togglea11p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa1(View view) {
-        if (togglea13p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa2(View view) {
-        if (togglea15p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa3(View view) {
-        if (togglea17p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea1(View view) {
-        if (togglea19p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea2(View view) {
-        if (togglea21p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea3(View view) {
-        if (togglea23p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia12(View view) {
-        if (togglea2p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePolskiJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia22(View view) {
-        if (togglea4p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePolskiDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia32(View view) {
-        if (togglea6p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieRebusowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePolskiTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa12(View view) {
-        if (togglea8p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa22(View view) {
-        if (togglea10p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa32(View view) {
-        if (togglea12p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieMatematykaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa12(View view) {
-        if (togglea14p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa22(View view) {
-        if (togglea16p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa32(View view) {
-        if (togglea18p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 3 || i == 5) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytaniePrzyrodaTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea12(View view) {
-        if (togglea20p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieJedenPunktMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea22(View view) {
-        if (togglea22p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieDwaPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea32(View view) {
-        if (togglea24p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaMag.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 1) {
-                Intent intent = new Intent(WyborPytaniaMag.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i > 2 || i < 6) {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaMag.this, PytanieZycieTrzyPunktyMag.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
 
     public void onStart() {
         super.onStart();

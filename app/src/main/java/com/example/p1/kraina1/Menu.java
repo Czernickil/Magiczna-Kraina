@@ -51,7 +51,8 @@ public class Menu extends Activity {
     public static int stanPopupow = 0;
     int soundId;
     double czas;
-
+    public static String kategoria;
+    public static int wartoscPunktowa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

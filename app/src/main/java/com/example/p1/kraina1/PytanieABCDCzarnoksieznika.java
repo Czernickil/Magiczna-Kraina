@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.Random;
-
-public class PytaniePrzyrodaTrzyPunktyMag extends Activity {
+import static com.example.p1.kraina1.Menu.kategoria;
+import static com.example.p1.kraina1.Menu.wartoscPunktowa;
+public class PytanieABCDCzarnoksieznika extends Activity {
     public void onStart() {
         super.onStart();
         Menu.poprawneWylaczenie = 0;
@@ -44,16 +45,8 @@ public class PytaniePrzyrodaTrzyPunktyMag extends Activity {
         odp3 = (TextView) findViewById(R.id.od3);
         odp4 = (TextView) findViewById(R.id.od4);
         i = generator.nextInt(8);
-     /*   while (PytanieTesktowe.getPytpol1(i, 5).equals("Z"))
-            i = generator.nextInt(8);
-        pyt.setText(PytanieTesktowe.getPytpol1(i, 0));
-        odp1.setText(PytanieTesktowe.getPytpol1(i, 1));
-        odp2.setText(PytanieTesktowe.getPytpol1(i, 2));
-        odp3.setText(PytanieTesktowe.getPytpol1(i, 3));
-        odp4.setText(PytanieTesktowe.getPytpol1(i, 4));
-        PytanieTesktowe.zajPytpol1(i); */
         RepozytoriumPytan repozytoriumPytan= new RepozytoriumPytan(getApplication());
-        pytanie = repozytoriumPytan.pozyskajPytaniaWedlugKategoriiPunktow("Przyroda", 3);
+        pytanie = repozytoriumPytan.pozyskajPytaniaWedlugKategoriiPunktow(kategoria, wartoscPunktowa);
         pyt.setText(pytanie.getPTrescPytania());
         odp1.setText(pytanie.getPOdpowiedzA());
         odp2.setText(pytanie.getPOdpowiedzB());
@@ -88,15 +81,20 @@ public class PytaniePrzyrodaTrzyPunktyMag extends Activity {
         else
             zla(view);
     }
-
     public void dobra(View view) {
-        Intent intent = new Intent(PytaniePrzyrodaTrzyPunktyMag.this, DobrzeMagTrzyPunkty.class);
+        Intent intent;
+        if(wartoscPunktowa==1){
+            intent = new Intent(PytanieABCDCzarnoksieznika.this, DobrzeCzernoksieznikJedenPunkt.class);}
+        else if(wartoscPunktowa==2){
+            intent = new Intent(PytanieABCDCzarnoksieznika.this, DobrzeCzernoksieznikDwaPunkty.class);}
+        else {
+            intent = new Intent(PytanieABCDCzarnoksieznika.this, DobrzeCzernoksieznikTrzyPunkty.class);}
         Menu.poprawneWylaczenie = 1;
         startActivity(intent);
     }
 
     public void zla(View view) {
-        Intent intent = new Intent(PytaniePrzyrodaTrzyPunktyMag.this, ZlaOdpowiedzMaga.class);
+        Intent intent = new Intent(PytanieABCDCzarnoksieznika.this, ZlaOdpowiedzCzarnoksieznika.class);
         Menu.poprawneWylaczenie = 1;
         startActivity(intent);
     }

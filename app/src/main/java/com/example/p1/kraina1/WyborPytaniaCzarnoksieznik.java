@@ -14,8 +14,10 @@ import java.util.Random;
 
 import static com.example.p1.kraina1.GlownyWidokCzarnoksieznika.skrzatyCzarnoksieznika;
 import static com.example.p1.kraina1.GlownyWidokMaga.skrzatyMaga;
+import static com.example.p1.kraina1.Menu.kategoria;
 import static com.example.p1.kraina1.Menu.setsc;
 import static com.example.p1.kraina1.Menu.setsm;
+import static com.example.p1.kraina1.Menu.wartoscPunktowa;
 import static com.example.p1.kraina1.PrzyciskWyboruPytania.FlashEnum3.OFF3;
 
 public class WyborPytaniaCzarnoksieznik extends Activity {
@@ -69,7 +71,6 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
     PrzyciskWyboruPytania toggleca22p;
     PrzyciskWyboruPytania toggleca23p;
     PrzyciskWyboruPytania toggleca24p;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -244,7 +245,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiJedenPunktCzarnoksieznik.class);
+                kategoria="Polski";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -262,7 +265,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiDwaPunktyCzarnoksieznik.class);
+                kategoria="Polski";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -280,7 +285,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiTrzyPunktyCzarnoksieznik.class);
+                kategoria="Polski";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -298,7 +305,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaJedenPunktCzarnoksieznik.class);
+                kategoria="Matematyka";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -316,8 +325,10 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
+                kategoria="Matematyka";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
+                Menu.poprawneWylaczenie = 2;
                 startActivity(intent);
             }
         }
@@ -334,8 +345,10 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
+                kategoria="Matematyka";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
+                Menu.poprawneWylaczenie = 3;
                 startActivity(intent);
             }
         }
@@ -356,7 +369,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaJedenPunktCzarnoksieznik.class);
+                kategoria="Przyroda";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -378,7 +393,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaDwaPunktyCzarnoksieznik.class);
+                kategoria="Przyroda";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -400,7 +417,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaTrzyPunktyCzarnoksieznik.class);
+                kategoria="Przyroda";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -422,7 +441,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieJedenPunktCzarnoksieznik.class);
+                kategoria="Zycie";
+                wartoscPunktowa=1;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -444,7 +465,9 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieDwaPunktyCzarnoksieznik.class);
+                kategoria="Zycie";
+                wartoscPunktowa=2;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
@@ -466,708 +489,16 @@ public class WyborPytaniaCzarnoksieznik extends Activity {
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieTrzyPunktyCzarnoksieznik.class);
+                kategoria="Zycie";
+                wartoscPunktowa=3;
+                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieABCDCzarnoksieznika.class);
                 Menu.poprawneWylaczenie = 1;
                 startActivity(intent);
             }
         }
     }
 
-    public void polski12(View view) {
-        if (togglec2p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
 
-    public void polski22(View view) {
-        if (togglec4p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polski32(View view) {
-        if (togglec6p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematyka12(View view) {
-        if (togglec8p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematyka22(View view) {
-        if (togglec10p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematyka32(View view) {
-        if (togglec12p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyroda12(View view) {
-        if (togglec14p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyroda22(View view) {
-        if (togglec16p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyroda32(View view) {
-        if (togglec18p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieLiterkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zycie12(View view) {
-        if (togglec20p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zycie22(View view) {
-        if (togglec22p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zycie32(View view) {
-        if (togglec24p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia1(View view) {
-        if (toggleca1p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia2(View view) {
-        if (toggleca3p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia3(View view) {
-        if (toggleca5p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa1(View view) {
-        if (toggleca7p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa2(View view) {
-        if (toggleca9p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa3(View view) {
-        if (toggleca11p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa1(View view) {
-        if (toggleca13p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa2(View view) {
-        if (toggleca15p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa3(View view) {
-        if (toggleca17p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea1(View view) {
-        if (toggleca19p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea2(View view) {
-        if (toggleca21p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea3(View view) {
-        if (toggleca23p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia12(View view) {
-        if (toggleca2p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia22(View view) {
-        if (toggleca4p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void polskia32(View view) {
-        if (toggleca6p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePolskiTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa12(View view) {
-        if (toggleca8p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa22(View view) {
-        if (toggleca10p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void matematykaa32(View view) {
-        if (toggleca12p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieMatematykaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa12(View view) {
-        if (toggleca14p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa22(View view) {
-        if (toggleca16p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void przyrodaa32(View view) {
-        if (toggleca18p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytaniePrzyrodaTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea12(View view) {
-        if (toggleca20p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieJedenPunktCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea22(View view) {
-        if (toggleca22p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieDwaPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
-
-    public void zyciea32(View view) {
-        if (toggleca24p.getState() != OFF3) {
-            if (i == 7) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, com.example.p1.kraina1.PytanieZabawne.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 5 || i == 6) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieObrazkowe.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else if (i == 4) {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, WyborPortalu.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(WyborPytaniaCzarnoksieznik.this, PytanieZycieTrzyPunktyCzarnoksieznik.class);
-                Menu.poprawneWylaczenie = 1;
-                startActivity(intent);
-            }
-        }
-    }
 
     public void onStart() {
         super.onStart();

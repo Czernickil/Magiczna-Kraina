@@ -131,7 +131,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polski12"
+                android:onClick="polski1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="234dp"
@@ -153,7 +153,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polski22"
+                android:onClick="polski2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -175,7 +175,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polski32"
+                android:onClick="polski3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -205,7 +205,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polskia1"
+                android:onClick="polski1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="105dp"
@@ -216,7 +216,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polskia12"
+                android:onClick="polski1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="234dp"
@@ -227,7 +227,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polskia2"
+                android:onClick="polski2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -238,7 +238,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polskia22"
+                android:onClick="polski2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -249,7 +249,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polskia3"
+                android:onClick="polski3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="105dp"
@@ -260,7 +260,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="polskia32"
+                android:onClick="polski3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -288,7 +288,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematyka12"
+                android:onClick="matematyka1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="145dp"
@@ -310,7 +310,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematyka22"
+                android:onClick="matematyka2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -332,7 +332,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematyka32"
+                android:onClick="matematyka3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -362,7 +362,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematykaa1"
+                android:onClick="matematyka1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="105dp"
@@ -373,7 +373,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematykaa12"
+                android:onClick="matematyka1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="145dp"
@@ -384,7 +384,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematykaa2"
+                android:onClick="matematyka2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="145dp"
@@ -395,7 +395,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematykaa22"
+                android:onClick="matematyka2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -406,7 +406,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematykaa3"
+                android:onClick="matematyka3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="234dp"
@@ -417,7 +417,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="matematykaa32"
+                android:onClick="matematyka3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -445,7 +445,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyroda12"
+                android:onClick="przyroda1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -467,7 +467,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyroda22"
+                android:onClick="przyroda2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="194dp"
@@ -489,7 +489,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyroda32"
+                android:onClick="przyroda3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="194dp"
@@ -519,7 +519,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyrodaa1"
+                android:onClick="przyroda1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="194dp"
@@ -530,7 +530,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyrodaa12"
+                android:onClick="przyroda1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -541,7 +541,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyrodaa2"
+                android:onClick="przyroda2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -552,7 +552,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyrodaa22"
+                android:onClick="przyroda2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="194dp"
@@ -563,7 +563,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyrodaa3"
+                android:onClick="przyroda3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="234dp"
@@ -574,7 +574,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="przyrodaa32"
+                android:onClick="przyroda3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="194dp"
@@ -602,7 +602,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zycie12"
+                android:onClick="zycie1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="234dp"
@@ -624,7 +624,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zycie22"
+                android:onClick="zycie2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -646,7 +646,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zycie32"
+                android:onClick="zycie3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
@@ -677,7 +677,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zyciea1"
+                android:onClick="zycie1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="105dp"
@@ -688,7 +688,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zyciea12"
+                android:onClick="zycie1"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="234dp"
@@ -699,7 +699,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zyciea2"
+                android:onClick="zycie2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="145dp"
@@ -710,7 +710,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zyciea22"
+                android:onClick="zycie2"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="16dp"
@@ -721,7 +721,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zyciea3"
+                android:onClick="zycie3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="145dp"
@@ -732,7 +732,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
 
-                android:onClick="zyciea32"
+                android:onClick="zycie3"
                 android:textOff="W"
                 android:textOn="O"
                 tools:layout_editor_absoluteX="56dp"
